@@ -1,0 +1,54 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: SpecificRecordsType
+description: Describes the intellectual format of the archival materials.
+type: object
+properties:
+  authorityType:
+    $ref: properties/authorityType
+
+  broaderTerms:
+    type: array
+    items:
+      $ref: properties/broaderTerm
+
+  heading:
+    $ref: properties/heading
+
+  importRecordControlNumber:
+    $ref: properties/importRecordControlNumber
+
+  linkCounts:
+    $ref: properties/specificRecordsTypeLinkCounts
+
+  naId:
+    $ref: properties/naId
+
+  narrowerTerms:
+    type: array
+    items:
+      $ref: properties/narrowerTerm
+
+  recordType:
+    $ref: properties/recordType
+
+  recordSource:
+    $ref: properties/recordSource
+
+  relatedTerms:
+    type: array
+    items:
+      $ref: properties/relatedTerm
+
+  scopeNote:
+    $ref: properties/scopeNote
+
+  sourceNotes:
+    type: array
+    items:
+      $ref: properties/sourceNote
+
+  useFor:
+    type: array
+    items:
+      $ref: properties/useFor

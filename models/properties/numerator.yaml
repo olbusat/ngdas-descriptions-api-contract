@@ -1,0 +1,10 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: numerator
+description: >-
+  A roman numeral which is the subsequent part of a person's forename (first name). In
+  general, a numerator is usually only part of the names of popes and royalty.
+type: string
+examples:
+  - II
+  - IV

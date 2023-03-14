@@ -1,0 +1,28 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: itemMediaOccurrence
+description: Additional media occurrence information only available for items.
+type: object
+allOf:
+  - $ref: mediaOccurrence
+properties:
+  base:
+    type: string
+    description: >-
+      The substance of the media used to physically carry or hold the information
+      in the archival item. Also called the substrate.
+    examples:
+      - Cellulose Acetate
+      - Paper
+
+  emulsion:
+    type: string
+    description: The type of coating that is bonded to and supported by the base of the specific media type.
+    examples:
+      - Metal Evaporation
+      - Ferric Oxide
+
+  otherPreservationCharacteristics:
+    type: array
+    items:
+      $ref: otherPreservationCharacteristics

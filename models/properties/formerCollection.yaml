@@ -1,0 +1,17 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: formerCollection
+description: >-
+  The identifiable information of the collection to which the archival materials 
+  were previously allocated. Enables users to locate archival materials by their
+  former collection citations, which can be found in out-of-date finding aids.
+type: object
+properties:
+  collectionIdentifier:
+    $ref: collectionIdentifier
+
+  naId:
+    $ref: naId
+
+  title:
+    $ref: title

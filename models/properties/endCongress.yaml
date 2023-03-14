@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: endCongress
+description: The last number of the Congress during which the archival materials were created.
+type: integer
+examples:
+  - 34
+  - 116

@@ -1,0 +1,12 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: fileUnitPhysicalOccurrence
+description: Details about the physical occurrence of archival materials within a file unit.
+type: object
+allOf:
+  - $ref: physicalOccurrence
+properties:
+  mediaOccurrences:
+    type: array
+    items:
+      $ref: mediaOccurrence

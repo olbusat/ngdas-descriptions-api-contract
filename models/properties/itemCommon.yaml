@@ -1,0 +1,160 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: itemCommon
+description: >-
+  The smallest indivisible archival unit (e.g. a letter, memorandum, report, leaflet, or photograph).
+  For example, a book or record album would be described as an item, but the individual chapters of
+  the book or the discs or songs that make up the album would not be described as items.
+type: object
+properties:
+  accessionNumber:
+    $ref: accessionNumber
+
+  accessRestriction:
+    $ref: accessRestriction
+
+  ancestors:
+    description: >-
+      Identifiable and otherwise relevant information about archival control groups or 
+      hierarchical description levels that are parents or more distant ancestors to this file unit.
+    type: array
+    items:
+      oneOf:
+        - $ref: ancestorRecordGroup
+        - $ref: ancestorCollection
+        - $ref: ancestorSeries
+        - $ref: ancestorFileUnit
+
+  audiovisual:
+    $ref: audiovisual
+
+  beginCongress:
+    $ref: beginCongress
+
+  contributors:
+    type: array
+    items:
+      oneOf:
+        - $ref: organizationalContributor
+        - $ref: personalContributor
+
+  copyrightDates:
+    type: array
+    items:
+      $ref: copyrightDate
+
+  coverageEndDate:
+    $ref: coverageEndDate
+
+  coverageStartDate:
+    $ref: coverageStartDate
+
+  custodialHistoryNote:
+    $ref: custodialHistoryNote
+
+  dataControlGroup:
+    $ref: dataControlGroup
+
+  dateNote:
+    $ref: dateNote
+
+  levelOfDescription:
+    $ref: levelOfDescription
+
+  digitalObjects:
+    type: array
+    items:
+      $ref: digitalObject
+
+  endCongress:
+    $ref: endCongress
+
+  generalNotes:
+    type: array
+    items:
+      $ref: generalNote
+
+  generalRecordsTypes:
+    type: array
+    items:
+      $ref: generalRecordType
+
+  internalTransferNumbers:
+    type: array
+    items:
+      $ref: internalTransferNumber
+
+  languages:
+    type: array
+    items:
+      $ref: language
+
+  localIdentifier:
+    $ref: localIdentifier
+
+  microformPublications:
+    type: array
+    items:
+      $ref: microformPublication
+
+  naId:
+    $ref: naId
+
+  onlineResources:
+    type: array
+    items:
+      $ref: onlineResource
+
+  otherTitles:
+    type: array
+    items:
+      $ref: otherTitle
+
+  partyDesignation:
+    $ref: partyDesignation
+
+  productionDates:
+    type: array
+    items:
+      $ref: productionDate
+
+  recordsCenterTransferNumbers:
+    type: array
+    items:
+      $ref: recordsCenterTransferNumber
+
+  recordType:
+    $ref: recordType
+
+  scaleNote:
+    $ref: scaleNote
+
+  scopeAndContentNote:
+    $ref: scopeAndContentNote
+
+  subjects:
+    type: array
+    items:
+      oneOf:
+        - $ref: geographicReference
+        - $ref: organizationalReference
+        - $ref: personalReference
+        - $ref: specificRecordsTypeReference
+        - $ref: topicalSubjectReference
+
+  subtitle:
+    $ref: subtitle
+
+  title:
+    $ref: title
+
+  transferNote:
+    $ref: transferNote
+
+  useRestriction:
+    $ref: useRestriction
+
+  variantControlNumbers:
+    type: array
+    items:
+      $ref: variantControlNumber

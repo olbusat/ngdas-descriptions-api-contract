@@ -1,0 +1,25 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: specificAccessRestriction
+description: >-
+  Specific access restrictions to the archival materials, based on national security
+  considerations, donor restrictions, court orders, and other statutory or regulatory
+  provisions.
+type: object
+properties:
+  restriction:
+    type: string
+    description: The specific reason for access restriction.
+    examples:
+      - Donor Restricted
+      - FOIA (b)(1) National Security
+      - Presidential Records Act (p)(1) National Security Classified
+
+  securityClassification:
+    type: string
+    description: >-
+      The highest level of national security protections or classified nuclear 
+      information protections on the archival materials.
+    examples:
+      - Secret
+      - Top Secret

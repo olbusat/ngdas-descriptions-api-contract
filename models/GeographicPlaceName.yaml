@@ -1,0 +1,57 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: GeographicPlaceName
+description: Describes the places represented in archival materials.
+type: object
+properties:
+  authorityType:
+    $ref: properties/authorityType
+
+  broaderTerms:
+    type: array
+    items:
+      $ref: properties/broaderTerm
+
+  coordinates:
+    $ref: properties/coordinates
+
+  heading:
+    $ref: properties/heading
+
+  importRecordControlNumber:
+    $ref: properties/importRecordControlNumber
+
+  linkCounts:
+    $ref: properties/geographicPlaceNameLinkCounts
+
+  naId:
+    $ref: properties/naId
+
+  narrowerTerms:
+    type: array
+    items:
+      $ref: properties/narrowerTerm
+
+  relatedTerms:
+    type: array
+    items:
+      $ref: properties/relatedTerm
+
+  recordSource:
+    $ref: properties/recordSource
+
+  recordType:
+    $ref: properties/recordType
+
+  scopeNote:
+    $ref: properties/scopeNote
+
+  sourceNotes:
+    type: array
+    items:
+      $ref: properties/sourceNote
+
+  useFor:
+    type: array
+    items:
+      $ref: properties/useFor

@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: publicContributorUserName
+description: publicContributorUserName model description
+type: string
+examples:
+  - 'historybuff123'
+  - 'johndoe1776'

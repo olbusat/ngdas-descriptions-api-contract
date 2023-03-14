@@ -1,0 +1,10 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: specificUseRestriction
+description: >-
+  The identification of the type of use restrictions, based on copyright, 
+  donor, or statutory provisions, on the archival materials.
+type: string
+examples:
+  - Copyright
+  - Donor Restrictions

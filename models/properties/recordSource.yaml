@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: recordSource
+description: External authority source that provided the authority record.
+type: string
+examples:
+  - Getty Art and Architecture Thesaurus
+  - Library of Congress Name Authority File

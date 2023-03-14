@@ -1,0 +1,56 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: organizationName
+description: >-
+  Represents the name of the organization being described in the authority record. The official
+  designation of an organization
+type: object
+properties:
+  abolishDate:
+    $ref: abolishDate
+
+  contributorTypes:
+    type: array
+    items:
+      $ref: contributorType
+
+  creatorTypes:
+    type: array
+    items:
+      $ref: creatorType
+
+  establishDate:
+    $ref: establishDate
+
+  heading:
+    $ref: heading
+
+  linkCounts:
+    $ref: orgLinkCounts
+
+  naId:
+    $ref: naId
+
+  name:
+    $ref: name
+
+  predecessors:
+    type: array
+    items:
+      $ref: predecessor
+
+  recordSource:
+    $ref: recordSource
+
+  role:
+    $ref: role
+
+  successors:
+    type: array
+    items:
+      $ref: successor
+
+  variantOrganizationNames:
+    type: array
+    items:
+      $ref: variantOrganizationName

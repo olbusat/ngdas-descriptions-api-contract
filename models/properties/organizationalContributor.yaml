@@ -1,0 +1,15 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: organizationalContributor
+description: >-
+  The name of an organization, other than the archival creator, responsible for the
+  intellectual, technical, artistic, or financial production of the archival materials.
+type: object
+allOf:
+  - $ref: contributor
+properties:
+  abolishDate:
+    $ref: abolishDate
+
+  establishDate:
+    $ref: establishDate

@@ -1,0 +1,13 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: productionSeriesNumber
+description: >-
+  The alphabetic or numeric identifier for a part or section of a production series. Parts or 
+  sections refer to segments, such as individual episodes, in a production series. The word 
+  "series" is used in a non-archival sense.  It specifically refers to motion pictures or
+  videotapes produced as a series, such as a television series or movie serials.
+type: string
+examples:
+  - Episode #101
+  - No. 2
+  - Series 1

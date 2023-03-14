@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: objectId
+description: The identifier given to a digital object.
+type: string
+examples:
+  - 'Report XR657, Page 1'
+  - 'Map N67, Sht. 36'

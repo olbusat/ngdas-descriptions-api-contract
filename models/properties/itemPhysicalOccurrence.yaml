@@ -1,0 +1,12 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: itemPhysicalOccurrence
+description: itemPhysicalOccurrence model description
+type: object
+allOf:
+  - $ref: physicalOccurrence
+properties:
+  mediaOccurrences:
+    type: array
+    items:
+      $ref: itemMediaOccurrence

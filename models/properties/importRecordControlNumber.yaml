@@ -1,0 +1,11 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: importRecordControlNumber
+description: >-
+  The number assigned by the organization that created or distributed an imported 
+  authority record. It provides traceability for an imported authority record back to the 
+  original external source.
+type: string
+examples:
+  - n 79021421
+  - n 84804450

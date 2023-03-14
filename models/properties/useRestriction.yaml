@@ -1,0 +1,28 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: useRestriction
+description: Provides information and status about restrictions on use of archival materials.
+type: object
+properties:
+  note:
+    type: string
+    description: >-
+      Significant information pertaining to the use or reproduction of the archival materials.
+    examples:
+      - Copyright held by RKO General Inc.
+      - >-
+        Some or all of the images in this series may be subject to copyright or other 
+        intellectual property restrictions.
+
+  specificUseRestrictions:
+    type: array
+    items:
+      $ref: specificUseRestriction
+
+  status:
+    type: string
+    description: >-
+      Indication of whether or not there are use restrictions on the archival materials.
+    examples:
+      - Restricted - Fully
+      - Unrestricted

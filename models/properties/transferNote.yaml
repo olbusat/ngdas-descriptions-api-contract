@@ -1,0 +1,14 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: transferNote
+description: >-
+  Significant information regarding the internal transfer of archival materials
+  from one NARA unit to another. This type of information is particularly important
+  for archival materials that have been regionalized. Provides clarification needed
+  to understand Internal Transfer Number or Records Center Transfer Number.
+type: string
+examples:
+  - >-
+    These records were formerly housed with the textual records of the Polar Gift 
+    Collection in the former Division of Polar Archives and were transferred to the 
+    Still Picture Branch in January 1997.

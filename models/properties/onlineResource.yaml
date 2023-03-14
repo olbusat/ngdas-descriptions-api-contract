@@ -1,0 +1,35 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: onlineResource
+description: >-
+  A digital resource, such as a web page or PDF file, that resides outside of the DAS
+  database and enhances understanding of and access to archival materials described within it. 
+  Online Resource contains information about the archival materials or their use
+  that is not part of a standard archival description. Online Resource may be created by NARA
+  or by external sources, and may be mounted on NARA or external web sites.
+type: object
+properties:
+  description:
+    type: string
+    description: Textual description of the type of online resource.
+    examples:
+      - Access to Archival Databases (AAD) system
+      - Filing Manual
+
+  note:
+    type: string
+    description: >-
+      Explanations or significant information regarding an Online Resource in
+      relation to the archival materials being described.
+    examples:
+      - >-
+        The electronic records in some of the files in this series can be
+        searched online via the Access to Archival Databases (AAD) system.
+      - Order Online! can be used to order copies of these records.
+
+  url:
+    type: string
+    description: The URL associated with an Online Resource.
+    examples:
+      - http://www.archives.gov/research/order/orderonline.html
+      - http://www.maritime.org/navyfile/index.htm

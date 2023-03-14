@@ -1,0 +1,30 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: seriesPhysicalOccurrence
+description: Details about the physical occurrence of archival materials within a series.
+type: object
+allOf:
+  - $ref: physicalOccurrence
+properties:
+  containerList:
+    type: string
+    description: >-
+      The listing of the starting and ending titles of the contents of each
+      container in which the archival materials are stored.
+    examples:
+      - >-
+        Volume 1: A - D
+        Volume 2: E - H
+      - >-
+        Box 1: Correspondence: ca. 1914 -- 1939/1940
+        Box 2: Correspondence: 1941 -- 1954
+
+  holdingsMeasurements:
+    type: array
+    items:
+      $ref: holdingsMeasurement
+
+  mediaOccurrences:
+    type: array
+    items:
+      $ref: mediaOccurrence

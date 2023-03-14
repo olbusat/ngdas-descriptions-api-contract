@@ -1,0 +1,6 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: parentContributionId
+description: Identifies the first version of a transcription or the comment being replied to.
+allOf:
+  - $ref: contributionId

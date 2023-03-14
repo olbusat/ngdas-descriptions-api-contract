@@ -1,0 +1,11 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: contextualAuthorityType
+description: >-
+  The type of primary authority used to provide context by capturing the historical 
+  background of the organizations and individuals who created, contributed to, or are
+  the subject of archival materials.
+type: string
+enum:
+  - Organization
+  - Person

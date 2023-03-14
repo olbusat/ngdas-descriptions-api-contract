@@ -1,0 +1,15 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: creatingIndividual
+description: >-
+  A person responsible for the creation, accumulation, or maintenance of the series when in
+  working (primary) use.
+type: object
+allOf:
+  - $ref: creator
+properties:
+  birthDate:
+    $ref: birthDate
+
+  deathDate:
+    $ref: deathDate

@@ -1,0 +1,17 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: authorityReference
+description: >-
+  Heading and identifier of a primary authority record.  Represents a relationship between
+  authorities or between authorities and descriptions.
+
+type: object
+properties:
+  authorityType:
+    $ref: authorityType
+
+  heading:
+    $ref: heading
+
+  naId:
+    $ref: naId

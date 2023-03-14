@@ -1,0 +1,85 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Collection
+description: >-
+  An artificial accumulation of documents brought together on the basis of some
+  characteristic (e.g. means of acquisition, creator, subject, language, medium, form, name
+  of collector) without regard to the provenance of the documents. The Presidential libraries
+  often organize their archival materials by collections, which primarily fall into
+  three categories: donated historical materials (relating to all Presidencies, Hoover-Bush),
+  Presidential records (applying to Presidencies since Reagan), and Presidential historical
+  materials (Nixon.)
+type: object
+properties:
+  collectionIdentifier:
+    $ref: properties/collectionIdentifier.yaml
+
+  coverageEndDate:
+    $ref: properties/coverageEndDate.yaml
+
+  coverageStartDate:
+    $ref: properties/coverageStartDate.yaml
+
+  dataControlGroup:
+    $ref: properties/dataControlGroup.yaml
+
+  dateNote:
+    $ref: properties/dateNote.yaml
+
+  donors:
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/organizationalDonor.yaml
+        - $ref: properties/personalDonor.yaml
+
+  findingAids:
+    type: array
+    items:
+      $ref: properties/findingAid.yaml
+
+  formerlyContained:
+    $ref: properties/formerlyContained.yaml
+
+  inclusiveEndDate:
+    $ref: properties/inclusiveEndDate.yaml
+
+  inclusiveStartDate:
+    $ref: properties/inclusiveStartDate.yaml
+
+  levelOfDescription:
+    $ref: properties/levelOfDescription.yaml
+
+  naId:
+    $ref: properties/naId.yaml
+
+  recordType:
+    $ref: properties/recordType.yaml
+
+  referenceUnits:
+    type: array
+    items:
+      $ref: properties/referenceUnit.yaml
+
+  scopeAndContentNote:
+    $ref: properties/scopeAndContentNote.yaml
+
+  seriesCount:
+    $ref: properties/seriesCount.yaml
+
+  title:
+    $ref: properties/title.yaml
+
+  variantControlNumbers:
+    type: array
+    items:
+      $ref: properties/variantControlNumber.yaml
+
+required:
+  - collectionIdentifier
+  - inclusiveEndDate
+  - inclusiveStartDate
+  - levelOfDescription
+  - naId
+  - recordType
+  - title

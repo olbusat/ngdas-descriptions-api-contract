@@ -1,0 +1,28 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Item
+description: >-
+  The smallest indivisible archival unit (e.g. a letter, memorandum, report, leaflet, or
+  photograph). For example, a book or record album would be described as an item, but the individual
+  chapters of the book or the discs or songs that make up the album would not be described as items.
+  Not used to describe motion picture films, sound recordings or video recordings.
+type: object
+allOf:
+  - $ref: properties/itemCommon
+properties:
+  physicalOccurrences:
+    type: array
+    items:
+      $ref: properties/itemPhysicalOccurrence
+
+required:
+  - accessRestriction
+  - ancestor
+  - creators
+  - generalRecordTypes
+  - levelOfDescription
+  - naId
+  - physicalOccurrences
+  - recordType
+  - title
+  - useRestriction

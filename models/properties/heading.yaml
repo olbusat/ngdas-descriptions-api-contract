@@ -1,0 +1,11 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: heading
+description: >-
+  A version of the authorized name of an authority that includes additional information such as
+  dates or fuller forms of names.
+type: string
+examples:
+  - Dulles, John Foster, 1888-1959
+  - Kennedy, John F. (John Fitzgerald), 1917-1963
+  - Department of Defense. Department of the Navy. U.S. Naval Support Activity, Chu Lai, Vietnam. 1964-1971

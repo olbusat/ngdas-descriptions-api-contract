@@ -1,0 +1,19 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: formerRecordGroup
+description: >-
+  The number and indentifiable information of the record group to which the
+  archival materials were previously allocated. Enables users to locate archival
+  materials by their former record group citations, which can be found in
+  out-of-date finding aids, such as earlier versions of the Guide to Federal Records
+  in the National Archives of the United States.formerRecordGroup model description
+type: object
+properties:
+  naId:
+    $ref: naId
+
+  recordGroupNumber:
+    $ref: recordGroupNumber
+
+  title:
+    $ref: title

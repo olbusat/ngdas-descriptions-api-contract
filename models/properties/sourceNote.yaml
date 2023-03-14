@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: sourceNote
+description: Resources cited to develop and support headings and references in an authority record.
+type: string
+examples:
+  - LC authorities online, Jan. 11, 2011
+  - Encyclopedia Britannica Online (1997-2002)

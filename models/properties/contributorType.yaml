@@ -1,0 +1,11 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: contributorType
+description: >-
+  The role of an individual who or an organization that contributed or contributes to archival materials.
+type: string
+examples:
+  - Compiler
+  - Musician
+  - Photographer
+  - Producer

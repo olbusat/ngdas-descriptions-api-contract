@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: generalMediaType
+description: The general physical media form of the archival materials.
+type: string
+examples:
+  - Loose Sheets
+  - Magnetic Media

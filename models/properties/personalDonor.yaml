@@ -1,0 +1,14 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: personalDonor
+description: >-
+  The name of a person who donated a collection of archival materials.
+type: object
+allOf:
+  - $ref: donor
+properties:
+  birthDate:
+    $ref: birthDate
+
+  deathDate:
+    $ref: deathDate

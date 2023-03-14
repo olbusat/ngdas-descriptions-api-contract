@@ -1,0 +1,27 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: itemAvPhysicalOccurrence
+description: itemAvPhysicalOccurrence model description
+type: object
+allOf:
+  - $ref: physicalOccurrence
+properties:
+  mediaOccurrences:
+    type: array
+    items:
+      $ref: itemAvMediaOccurrence
+
+  totalFootage:
+    type: number
+    description: >-
+      The length in feet of all the reels or rolls that make up the entire copy of an audiovisual item.
+    examples:
+      - 43
+      - 1002
+
+  totalRunningTime:
+    type: integer
+    description: The total duration of an audiovisual item in seconds.
+    examples:
+      - 2340
+      - 182

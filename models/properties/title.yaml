@@ -1,0 +1,11 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: title
+description: The name assigned to the record group, collection, or archival materials.
+type: string
+examples:
+  - Inflation Sourcebook [1]
+  - Lou Henry Hoover Papers
+  - Manual for Army Cooks
+  - Records of the Office of the Pardon Attorney
+  - Records of the War Labor Policies Board

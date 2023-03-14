@@ -1,0 +1,19 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: creator
+description: >-
+  The name of a person or organization responsible for the creation, accumulation, or maintenance 
+  of the series when in working (primary) use.
+type: object
+properties:
+  authorityType:
+    $ref: contextualAuthorityType
+
+  creatorType:
+    $ref: creatorType
+
+  heading:
+    $ref: heading
+
+  naId:
+    $ref: naId

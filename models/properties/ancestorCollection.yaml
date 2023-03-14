@@ -1,0 +1,12 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: ancestorCollection
+description: >-
+  Identifiable and pertinent information that represents a collection that is a
+  parent or more distant ancestor to another archival description or control group.
+type: object
+allOf:
+  - $ref: ancestorDescription
+properties:
+  collectionIdentifier:
+    $ref: collectionIdentifier

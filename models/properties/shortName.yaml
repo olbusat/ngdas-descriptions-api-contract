@@ -1,0 +1,12 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: shortName
+description: >-
+  A version of the authorized name of an organization or person without additional information such as
+  dates or fuller forms of names.
+type: string
+examples:
+  - Dulles, John Foster
+  - Elizabeth, Queen, consort of George VI, King of Great Britain
+  - Kennedy, John F.
+  - Department of Defense. Department of the Navy. U.S. Naval Support Activity, Chu Lai, Vietnam.

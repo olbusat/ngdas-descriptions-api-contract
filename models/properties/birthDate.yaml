@@ -1,0 +1,6 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: birthDate
+description: The date on which the person was born.
+allOf:
+  - $ref: qualifiableDate

@@ -1,0 +1,28 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Tag
+description: >-
+  A form of user contribution that allows a user enter a word or phrase that describe and categorize
+  the archival materials.
+type: object
+properties:
+  contribution:
+    $ref: properties/contribution
+
+  contributionId:
+    $ref: properties/contributionId
+
+  contributionType:
+    $ref: properties/contributionType
+
+  contributor:
+    $ref: properties/publicContributor
+
+  createdAt:
+    $ref: properties/createdAt
+
+  recordType:
+    $ref: properties/recordType
+
+  target:
+    $ref: properties/contributionTarget

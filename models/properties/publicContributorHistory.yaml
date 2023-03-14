@@ -1,0 +1,24 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: publicContributorHistory
+description: >-
+  Information about the user who made a public contribution that includes date and version information.
+type: object
+properties:
+  contributionSequence:
+    $ref: contributionSequence
+
+  createdAt:
+    $ref: createdAt
+
+  fullName:
+    $ref: publicContributorFullName
+
+  naraStaff:
+    $ref: publicContributorNaraStaff
+
+  userId:
+    $ref: publicContributorUserId
+
+  userName:
+    $ref: publicContributorUserName

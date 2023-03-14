@@ -1,0 +1,113 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: mediaOccurrence
+description: >-
+  Provides information about the physical description of the archival materials and additional
+  information used to describe the media occurrence of the archival materials.
+type: object
+properties:
+  color:
+    type: string
+    description: >-
+      The absence or presence of colors, besides black, white and gray, of the specific media type.
+    examples:
+      - Color
+      - Black-and-White
+
+  containerId:
+    type: string
+    description: >-
+      The identifier or number for the individual container storing each specific media type.
+    examples:
+      - Box 6829
+      - '27'
+
+  depth:
+    type: number
+    description: The distance measured from front to back of a specific media type.
+    examples:
+      - 6.75
+      - 10
+
+  dimension:
+    type: string
+    description: The standard size of the physical items of a specific media type.
+    examples:
+      - 3x5 inch
+      - Varied
+
+  generalMediaTypes:
+    type: array
+    items:
+      $ref: generalMediaType
+
+  height:
+    type: number
+    description: The distance measured from top to bottom of the specific media type.
+    examples:
+      - 11.75
+      - 3.5
+
+  mediaOccurrenceNote:
+    type: string
+    description: >-
+      Explanations or significant information relating to the media occurrence of the archival materials.
+    examples:
+      - This reel contains music and sound effects.
+      - These images were made by the albumen and collodion processes.
+
+  physicalRestrictionNote:
+    type: string
+    description: >-
+      Information regarding any physical restrictions that apply to the particular specific media
+      type of the archival materials. Physical restrictions are primarily preservation restrictions.
+    examples:
+      - Because these records are stored offsite, researchers must request the records 48 hours in advance.
+      - This film reel has shrunk and may not be viewed.
+
+  pieceCount:
+    type: integer
+    description: >-
+      The exact number of physical items comprising the specific media type of the archival materials.
+    examples:
+      - 3
+      - 10
+
+  process:
+    type: string
+    description: The technical or manual means by which the specific media type was created.
+    examples:
+      - 'Artwork: Chalk'
+      - Photocopy
+
+  reproductionCount:
+    type: integer
+    description: >-
+      The exact number of parts or sides of the physical items needed to create a complete
+      duplicate of the specific media type of the archival materials.
+    examples:
+      - 6
+      - 49
+
+  specificMediaType:
+    type: string
+    description: The physical form of the archival materials.
+    examples:
+      - Digital Audio Tape
+      - Film Reel
+
+  technicalAccessRequirementsNote:
+    type: string
+    description: >-
+      A description of the equipment needed to view the specific media type, such as a light
+      table to view aerial film, or hardware and software to view archival materials on electronic media.
+    examples:
+      - An open reel computer tape drive is required.
+      - A light table is needed to view these aerial photographs.
+
+  width:
+    type: number
+    description: The horizontal distance measured from side to side of a specific media type.
+    examples:
+      - 6.25
+      - 4.5

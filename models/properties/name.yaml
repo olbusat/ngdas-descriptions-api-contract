@@ -1,0 +1,9 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: name
+description: The authorized form of an authority record name.
+type: string
+examples:
+  - Austria
+  - Financial records
+  - International Trade

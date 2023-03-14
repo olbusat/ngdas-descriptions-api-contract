@@ -1,0 +1,29 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: accessRestriction
+description: >-
+  The indication of, explicit markings for, and detailed notes regarding access restrictions 
+  on the archival materials.  Alerts users if access to the archival materials may be restricted.
+type: object
+properties:
+  note:
+    type: string
+    description: Significant information pertaining to the access restrictions on archival materials.
+    examples:
+      - >-
+        The records may be restricted due to privacy concerns. Register numbers 1 through 900
+        have been screened and are open for research.
+
+  specificAccessRestrictions:
+    type: array
+    items:
+      $ref: specificAccessRestriction
+
+  status:
+    type: string
+    description: >-
+      The indication of whether or not there are access restrictions on the archival materials.
+    examples:
+      - Restricted - Partly
+      - Restricted - Possibly
+      - Unrestricted

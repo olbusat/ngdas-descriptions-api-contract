@@ -1,0 +1,17 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: ancestorSeries
+description: >-
+  Identifiable and pertinent information that represents a series that is a parent
+  or more distant ancestor of another archival description.
+type: object
+properties:
+  allOf:
+    $ref: ancestorDescription
+
+  creators:
+    type: array
+    items:
+      oneOf:
+        - $ref: creatingIndividual
+        - $ref: creatingOrganization

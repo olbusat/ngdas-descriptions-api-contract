@@ -1,0 +1,41 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: physicalOccurrence
+description: physicalOccurrence model description
+type: object
+properties:
+  copyStatus:
+    type: string
+    description: >-
+      The role or purpose of each physical occurrence (copy) of the archival
+      materials. The purposes are preservation, reference, reproduction or some
+      combination of the three.
+    examples:
+      - Preservation
+      - Reproduction
+
+  extent:
+    type: string
+    description: >-
+      The measurement or amount of the archival materials themselves -- the 
+      linear measurement, page count, number of rolls, reels, cassettes, or 
+      number of data files.
+    examples:
+      - Approximately 6,000 pages
+      - 100 films on 1,000 film reels
+
+  physicalOccurrenceNote:
+    type: string
+    description: >-
+      Explanations or significant information relating to the physical
+      occurrence of the archival materials.
+    examples:
+      - Some photographs are mounted.
+      - >-
+        The cubic footage for the series of artifacts was estimated as one quarter 
+        of the stack area or 5,000 cubic feet.
+
+  referenceUnits:
+    type: array
+    items:
+      $ref: referenceUnit

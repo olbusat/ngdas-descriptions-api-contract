@@ -1,0 +1,12 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: productionSeriesTitle
+description: >-
+  The name of a production series to which an audiovisual item belongs. The word "series"
+  is used in a non-archival sense. It specifically refers to motion pictures, sound recordings, 
+  or videotapes produced as a series, such as a television series or movie serials.
+type: string
+examples:
+  - Music for Today
+  - This is America
+  - Viewmaster Science Series

@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: inclusiveEndDate
+description: >-
+  The ending date on which the record group, collection, series, or item was 
+  created, maintained, or accumulated by the creator.
+allOf:
+  - $ref: ./qualifiableDate.yaml

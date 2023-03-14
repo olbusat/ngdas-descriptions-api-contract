@@ -1,0 +1,63 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Person
+description: Person model description
+type: object
+properties:
+  authorityType:
+    $ref: properties/authorityType
+
+  biographicalNote:
+    $ref: properties/biographicalNote
+
+  birthDate:
+    $ref: properties/birthDate
+
+  deathDate:
+    $ref: properties/deathDate
+
+  fullerFormOfName:
+    $ref: properties/fullerFormOfName
+
+  heading:
+    $ref: properties/heading
+
+  importRecordControlNumber:
+    $ref: properties/importRecordControlNumber
+
+  linkCounts:
+    $ref: properties/personLinkCounts
+
+  naId:
+    $ref: properties/naId
+
+  name:
+    $ref: properties/personName
+
+  numerator:
+    $ref: properties/numerator
+
+  organizationalReferences:
+    $ref: properties/authorityReference
+
+  personalTitle:
+    $ref: properties/personalTitle
+
+  recordSource:
+    $ref: properties/recordSource
+
+  recordType:
+    $ref: properties/recordType
+
+  role:
+    $ref: properties/role
+
+  sourceNotes:
+    type: array
+    items:
+      $ref: properties/sourceNote
+
+  variantPersonNames:
+    type: array
+    items:
+      $ref: properties/variantPersonName

@@ -1,0 +1,11 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: localIdentifier
+description: >-
+  The identifier that a NARA custodial unit specifies to be used to request 
+  archival materials in the unit's custody.
+type: string
+examples:
+  - 64-371
+  - '3.3'
+  - 85-02-04-01.9

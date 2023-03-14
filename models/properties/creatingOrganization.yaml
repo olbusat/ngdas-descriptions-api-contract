@@ -1,0 +1,15 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: creatingOrganization
+description: >-
+  The name of an organization responsible for the creation, accumulation, or maintenance of the
+  series when in working (primary) use.
+type: object
+allOf:
+  - $ref: creator
+properties:
+  abolishDate:
+    $ref: abolishDate
+
+  establishDate:
+    $ref: establishDate

@@ -1,0 +1,11 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: generalNote
+description: >-
+  Significant information that does not belong in any other element. Provides
+  a place to capture information significant to the public that is not 
+  appropriate for any other element.
+type: string
+examples:
+  - This series serves as an index to the series 'Correspondence of the Director, 1880-1932.'
+  - This series was known as 'Miscellaneous' in previous finding aids.

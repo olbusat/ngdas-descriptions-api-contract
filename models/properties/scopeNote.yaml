@@ -1,0 +1,14 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: scopeNote
+description: >-
+  A note explaining the coverage, specialized usage, and/or rules for assigning the authority.
+type: string
+examples:
+  - >-
+    Assign this heading to holdings limited to the indigenous Arctic peoples of Greenland, 
+    Canada, and northern Alaska.
+  - >-
+    Located at mouth of Hudson River; visited by Europeans 16th-17th cen.; settled by Dutch, 
+    seized by British in 1664; was cosmopolitan center & nations largest city by 18th cen. 
+    Today is huge metropolis composed of 5 boroughs corresponding to 5 counties.

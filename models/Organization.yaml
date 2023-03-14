@@ -1,0 +1,48 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Organization
+description: Describes the purpose, history, function and relation to other organizations over time.
+type: object
+properties:
+  administrativeHistoryNote:
+    $ref: properties/administrativeHistoryNote
+
+  authorityType:
+    $ref: properties/authorityType
+
+  jurisdictions:
+    type: array
+    items:
+      $ref: properties/jurisdiction
+
+  heading:
+    $ref: properties/heading
+
+  linkCounts:
+    $ref: properties/orgLinkCounts
+
+  naId:
+    $ref: properties/naId
+
+  organizationNames:
+    type: array
+    items:
+      $ref: properties/organizationName
+
+  personalReferences:
+    type: array
+    items:
+      $ref: properties/authorityReference
+
+  programAreas:
+    type: array
+    items:
+      $ref: properties/programArea
+
+  recordType:
+    $ref: properties/recordType
+
+  sourceNotes:
+    type: array
+    items:
+      $ref: properties/sourceNote

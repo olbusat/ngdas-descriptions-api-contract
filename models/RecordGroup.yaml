@@ -1,0 +1,77 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: RecordGroup
+description: >-
+  A body of organizationally related records established on the basis of provenance by an archives 
+  for control purposes; A major archival unit that comprises the records of a large organization, 
+  such as a Government bureau or independent agency.
+type: object
+properties:
+  beginCongress:
+    $ref: properties/beginCongress.yaml
+
+  coverageEndDate:
+    $ref: properties/coverageEndDate.yaml
+
+  coverageStartDate:
+    $ref: properties/coverageStartDate.yaml
+
+  dataControlGroup:
+    $ref: properties/dataControlGroup.yaml
+
+  dateNote:
+    $ref: properties/dateNote.yaml
+
+  endCongress:
+    $ref: properties/endCongress.yaml
+
+  findingAids:
+    type: array
+    items:
+      $ref: properties/findingAid.yaml
+
+  formerlyContained:
+    $ref: properties/formerlyContained.yaml
+
+  inclusiveEndDate:
+    $ref: properties/inclusiveEndDate.yaml
+
+  inclusiveStartDate:
+    $ref: properties/inclusiveStartDate.yaml
+
+  levelOfDescription:
+    $ref: properties/levelOfDescription.yaml
+
+  naId:
+    $ref: properties/naId.yaml
+
+  partyDesignation:
+    $ref: properties/partyDesignation.yaml
+
+  recordGroupNumber:
+    $ref: properties/recordGroupNumber.yaml
+
+  recordType:
+    $ref: properties/recordType.yaml
+
+  referenceUnits:
+    type: array
+    items:
+      $ref: properties/referenceUnit.yaml
+
+  scopeAndContentNote:
+    $ref: properties/scopeAndContentNote.yaml
+
+  seriesCount:
+    $ref: properties/seriesCount.yaml
+
+  title:
+    $ref: properties/title.yaml
+
+required:
+  - inclusiveEndDate
+  - inclusiveStartDate
+  - levelOfDescription
+  - recordGroupNumber
+  - recordType
+  - title

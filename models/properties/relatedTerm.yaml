@@ -1,0 +1,12 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: relatedTerm
+description: >-
+  An authorized, preferred heading that is related in definition and scope but is not broader or narrower.
+type: object
+properties:
+  naId:
+    $ref: naId
+
+  heading:
+    $ref: heading

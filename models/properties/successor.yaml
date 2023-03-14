@@ -1,0 +1,10 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: successor
+description: The name and identifier of the immediate successor ogranization.
+type: object
+properties:
+  naId:
+    $ref: naId
+  name:
+    $ref: name

@@ -1,0 +1,9 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: personName
+description: The authorized name of person.
+type: string
+examples:
+  - Dulles, John Foster
+  - Elizabeth, Queen, consort of George VI, King of Great Britain
+  - Kennedy, John F.

@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: collectionIdentifier
+description: The unique identifier assigned to a collection.
+type: string
+examples:
+  - COLSA
+  - BYRD

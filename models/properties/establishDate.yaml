@@ -1,0 +1,6 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: establishDate
+description: The date on which the organization was established.
+allOf:
+  - $ref: qualifiableDate

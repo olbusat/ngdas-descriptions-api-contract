@@ -1,0 +1,23 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: ancestorDescription
+description: Base model for ancestors (parent, grandparent, etc..) to descriptions
+type: object
+properties:
+  distance:
+    $ref: distance
+
+  inclusiveEndDate:
+    $ref: inclusiveEndDate
+
+  inclusiveStartDate:
+    $ref: inclusiveStartDate
+
+  levelOfDescription:
+    $ref: levelOfDescription
+
+  naId:
+    $ref: naId
+
+  title:
+    $ref: title

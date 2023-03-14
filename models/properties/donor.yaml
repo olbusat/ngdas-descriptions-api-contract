@@ -1,0 +1,15 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: donor
+description: >-
+  The name of an organization or person that has donated a collection of archival materials.
+type: object
+properties:
+  authorityType:
+    $ref: contextualAuthorityType
+
+  heading:
+    $ref: heading
+
+  naId:
+    $ref: naId

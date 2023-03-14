@@ -1,0 +1,6 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: seriesCount
+type: integer
+description: Number of series within the archival control group.
+example: 110

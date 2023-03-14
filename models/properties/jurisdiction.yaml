@@ -1,0 +1,17 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: jurisdiction
+description: >-
+  The geographic area over which the organization had an administrative responsibility or
+  about which it collected information.  Represents a geographical name authority record.
+type: object
+properties:
+  naId:
+    $ref: naId
+
+  name:
+    description: The name of the jurisdiction
+    type: string
+    examples:
+      - Japan (Asia) nation
+      - Aomori (Tohoku-chiho, Japan, Asia) prefecture

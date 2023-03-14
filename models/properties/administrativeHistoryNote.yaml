@@ -1,0 +1,18 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: administrativeHistoryNote
+description: >-
+  Explanations or significant information regarding the organization, including 
+  information relevant to an understanding of its creation, mission, functions,
+  program areas, activities, incumbents, administrative and operational hierarchy,
+  relationships to other corporate bodies, relationships with superior organizations,
+  and earlier or successor names. Establishes an appropriate context for understanding
+  the records created by an organization.
+type: string
+examples:
+  - MACV was abolished March 29, 1973, by authority of JCS message 4825 DTG 220021Z Nov 72.
+  - >-
+    Following U.S. entry into the war the Special Operations Group (SPOBS) became an advance 
+    element of a theater of operations and was redesignated Headquarters, U.S. Army Forces 
+    in the British Isles by direction of the President conveyed in War Department message 293, 
+    AGWAR to SPOBS, January 8, 1942, and announced by HQ USAFBI General Order 1, January 8, 1942.

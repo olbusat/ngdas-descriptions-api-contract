@@ -1,0 +1,184 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: FileUnit
+description: >-
+  An organized unit (file, volume, etc.) of documents grouped together either for 
+  current use or in the process of archival arrangement. For NARA's descriptive practices, 
+  the file unit is the intellectual handling of the record item, which may or may not be 
+  the physical handling. In other words, a folder does not necessarily equal a file unit. 
+  For example, a case file may be in several physical folders, but is described as one
+  file unit. For electronic records, the definition of a file unit level may be difficult.
+  A file does not necessarily refer to a tape or to a particular data file.
+type: object
+properties:
+  accessionNumbers:
+    type: array
+    items:
+      $ref: properties/accessionNumber.yaml
+
+  accessRestriction:
+    $ref: properties/accessRestriction.yaml
+
+  ancestors:
+    description: >-
+      Identifiable and otherwise relevant information about archival control groups or 
+      hierarchical description levels that are parents or more distant ancestors to this file unit.
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/ancestorRecordGroup.yaml
+        - $ref: properties/ancestorCollection.yaml
+        - $ref: properties/ancestorSeries.yaml
+
+  arrangement:
+    $ref: properties/arrangement.yaml
+
+  audiovisual:
+    $ref: properties/audiovisual.yaml
+
+  beginCongress:
+    $ref: properties/beginCongress.yaml
+
+  contributors:
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/organizationalContributor.yaml
+        - $ref: properties/personalContributor.yaml
+
+  coverageEndDate:
+    $ref: properties/coverageEndDate.yaml
+
+  coverageStartDate:
+    $ref: properties/coverageStartDate.yaml
+
+  custodialHistoryNote:
+    $ref: properties/custodialHistoryNote.yaml
+
+  dataControlGroup:
+    $ref: properties/dataControlGroup.yaml
+
+  dateNote:
+    $ref: properties/dateNote.yaml
+
+  digitalObjects:
+    $ref: properties/digitalObject.yaml
+
+  editStatus:
+    $ref: properties/editStatus.yaml
+
+  endCongress:
+    $ref: properties/endCongress.yaml
+
+  findingAids:
+    type: array
+    items:
+      $ref: properties/findingAid.yaml
+
+  generalNotes:
+    type: array
+    items:
+      $ref: properties/generalNote.yaml
+
+  generalRecordTypes:
+    type: array
+    items:
+      $ref: properties/generalRecordType.yaml
+
+  internalTransferNumbers:
+    type: array
+    items:
+      $ref: properties/internalTransferNumber.yaml
+
+  itemCount:
+    $ref: properties/itemCount.yaml
+
+  languages:
+    type: array
+    items:
+      $ref: properties/language.yaml
+
+  levelOfDescription:
+    $ref: properties/levelOfDescription.yaml
+
+  localIdentifier:
+    $ref: properties/localIdentifier.yaml
+
+  naId:
+    $ref: properties/naId.yaml
+
+  microformPublications:
+    type: array
+    items:
+      $ref: properties/microformPublication.yaml
+
+  onlineResources:
+    type: array
+    items:
+      $ref: properties/onlineResource.yaml
+
+  otherTitles:
+    type: array
+    items:
+      $ref: properties/otherTitle.yaml
+
+  partyDesignation:
+    $ref: properties/partyDesignation.yaml
+
+  physicalOccurrences:
+    type: array
+    items:
+      $ref: properties/fileUnitPhysicalOccurrence.yaml
+
+  recordsCenterTransferNumbers:
+    type: array
+    items:
+      $ref: properties/recordsCenterTransferNumber.yaml
+
+  recordType:
+    $ref: properties/recordType.yaml
+
+  scaleNote:
+    $ref: properties/scaleNote.yaml
+
+  scopeAndContentNote:
+    $ref: properties/scopeAndContentNote.yaml
+
+  soundType:
+    $ref: properties/soundType.yaml
+
+  subjects:
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/geographicReference.yaml
+        - $ref: properties/organizationalReference.yaml
+        - $ref: properties/personalReference.yaml
+        - $ref: properties/specificRecordsTypeReference.yaml
+        - $ref: properties/topicalSubjectReference.yaml
+
+  title:
+    $ref: properties/title.yaml
+
+  transferNote:
+    $ref: properties/transferNote.yaml
+
+  useRestriction:
+    $ref: properties/useRestriction.yaml
+
+  variantControlNumbers:
+    type: array
+    items:
+      $ref: properties/variantControlNumber.yaml
+
+required:
+  - accessRestriction
+  - ancestor
+  - creators
+  - generalRecordTypes
+  - levelOfDescription
+  - naId
+  - physicalOccurrences
+  - recordType
+  - title
+  - useRestriction

@@ -1,0 +1,217 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: Series
+description: >-
+  File units or documents arranged in accordance with a filing system or maintained as a unit
+  because they result from the same accumulation or filing process, the same function, or the same
+  activity; have a particular form; or because of some other relationship arising out of their
+  creation, receipt, or use.
+type: object
+properties:
+  accessionNumbers:
+    type: array
+    items:
+      $ref: properties/accessionNumber.yaml
+
+  accessRestriction:
+    $ref: properties/accessRestriction.yaml
+
+  ancestors:
+    description: >-
+      Identifiable and otherwise relevant information about archival control groups that are parents or
+      more distant ancestors to this series.
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/ancestorRecordGroup.yaml
+        - $ref: properties/ancestorCollection.yaml
+
+  arrangement:
+    $ref: properties/arrangement.yaml
+
+  audiovisual:
+    $ref: properties/audiovisual.yaml
+
+  beginCongress:
+    $ref: properties/beginCongress.yaml
+
+  contributors:
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/organizationalContributor.yaml
+        - $ref: properties/personalContributor.yaml
+
+  coverageEndDate:
+    $ref: properties/coverageEndDate.yaml
+
+  coverageStartDate:
+    $ref: properties/coverageStartDate.yaml
+
+  creators:
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/creatingIndividual.yaml
+        - $ref: properties/creatingOrganization.yaml
+
+  custodialHistoryNote:
+    $ref: properties/custodialHistoryNote.yaml
+
+  dataControlGroup:
+    $ref: properties/dataControlGroup.yaml
+
+  dateNote:
+    $ref: properties/dateNote.yaml
+
+  dispositionAuthorityNumbers:
+    type: array
+    items:
+      $ref: properties/dispositionAuthorityNumber.yaml
+
+  editStatus:
+    $ref: properties/editStatus.yaml
+
+  endCongress:
+    $ref: properties/endCongress.yaml
+
+  fileUnitCount:
+    $ref: properties/fileUnitCount.yaml
+
+  findingAids:
+    type: array
+    items:
+      $ref: properties/findingAid.yaml
+
+  formerlyContainedBy:
+    $ref: properties/formerlyContainedBy.yaml
+
+  formerAncestors:
+    description: >-
+      Identifiable and otherwise relevant information about archival control groups that at one time were
+      parents or more distant ancestors to this description.
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/ancestorRecordGroup.yaml
+        - $ref: properties/ancestorCollection.yaml
+
+  functionAndUse:
+    $ref: properties/functionAndUse.yaml
+
+  generalNotes:
+    type: array
+    items:
+      $ref: properties/generalNote.yaml
+
+  generalRecordTypes:
+    type: array
+    items:
+      $ref: properties/generalRecordType.yaml
+
+  inclusiveEndDate:
+    $ref: properties/inclusiveEndDate.yaml
+
+  inclusiveStartDate:
+    $ref: properties/inclusiveStartDate.yaml
+
+  internalTransferNumbers:
+    type: array
+    items:
+      $ref: properties/internalTransferNumber.yaml
+
+  itemCount:
+    $ref: properties/itemCount.yaml
+
+  languages:
+    type: array
+    items:
+      $ref: properties/language.yaml
+
+  levelOfDescription:
+    $ref: properties/levelOfDescription.yaml
+
+  localIdentifier:
+    $ref: properties/localIdentifier.yaml
+
+  microformPublications:
+    type: array
+    items:
+      $ref: properties/microformPublication.yaml
+
+  naId:
+    $ref: properties/naId.yaml
+
+  numberingNote:
+    $ref: properties/numberingNote.yaml
+
+  onlineResources:
+    type: array
+    items:
+      $ref: properties/onlineResource.yaml
+
+  otherTitles:
+    type: array
+    items:
+      $ref: properties/otherTitle.yaml
+
+  partyDesignation:
+    $ref: properties/partyDesignation.yaml
+
+  pyhsicalOccurrences:
+    type: array
+    items:
+      $ref: properties/seriesPhysicalOccurrence.yaml
+
+  recordsCenterTransferNumbers:
+    type: array
+    items:
+      $ref: properties/recordsCenterTransferNumber.yaml
+
+  recordType:
+    $ref: properties/recordType.yaml
+
+  scaleNote:
+    $ref: properties/scaleNote.yaml
+
+  scopeAndContentNote:
+    $ref: properties/scopeAndContentNote.yaml
+
+  soundType:
+    $ref: properties/soundType.yaml
+
+  subjects:
+    type: array
+    items:
+      oneOf:
+        - $ref: properties/geographicReference.yaml
+        - $ref: properties/organizationalReference.yaml
+        - $ref: properties/personalReference.yaml
+        - $ref: properties/specificRecordsTypeReference.yaml
+        - $ref: properties/topicalSubjectReference.yaml
+
+  title:
+    $ref: properties/title.yaml
+
+  transferNote:
+    $ref: properties/transferNote.yaml
+
+  useRestriction:
+    $ref: properties/useRestriction.yaml
+
+  variantControlNumbers:
+    type: array
+    items:
+      $ref: properties/variantControlNumber.yaml
+
+required:
+  - accessRestriction
+  - ancestors
+  - creators
+  - generalRecordTypes
+  - levelOfDescription
+  - naId
+  - physicalOccurrences
+  - recordType
+  - title
+  - useRestriction

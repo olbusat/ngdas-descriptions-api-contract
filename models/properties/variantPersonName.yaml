@@ -1,0 +1,28 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: variantPersonName
+description: >-
+  Additional or variant names commonly used for the person, including nicknames, 
+  pen names, or transliterations.
+type: object
+properties:
+  birthDate:
+    $ref: birthDate
+
+  deathDate:
+    $ref: deathDate
+
+  fullerFormOfName:
+    $ref: fullerFormOfName
+
+  heading:
+    $ref: heading
+
+  name:
+    $ref: personName
+
+  numerator:
+    $ref: numerator
+
+  personalTitle:
+    $ref: personalTitle

@@ -1,0 +1,6 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: coverageStartDate
+description: The beginning of the time period covered by the subject(s) of the archival materials.
+allOf:
+  - $ref: qualifiableDate.yaml

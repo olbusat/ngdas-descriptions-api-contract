@@ -1,0 +1,8 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: copyrightDate
+description: >-
+  The date on which the item was copyrighted. (A copyright date does not mean an item is 
+  still copyrighted.)
+allOf:
+  - $ref: qualifiableDate

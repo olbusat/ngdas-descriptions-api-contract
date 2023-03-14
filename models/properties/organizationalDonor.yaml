@@ -1,0 +1,16 @@
+$schema: http://json-schema.org/draft-07/schema#
+
+title: organizationalDonor
+description: >-
+  The name of an organization that has donated a collection of archival materials. Organizational
+  entities include meetings, conferences, commissions, production groups, and Federal agencies. They
+  can be any entity other than an individual.
+type: object
+allOf:
+  - $ref: donor
+properties:
+  abolishDate:
+    $ref: abolishDate
+
+  establishDate:
+    $ref: establishDate
