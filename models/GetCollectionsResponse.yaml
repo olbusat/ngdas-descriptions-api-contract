@@ -2,4 +2,4 @@ description: >
   A list of Collection archival descriptions.
 type: array
 items:
-  $ref: examples/collection/StoredCollection.yaml'
+  $ref: Collection.yaml
