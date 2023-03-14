@@ -5,10 +5,10 @@ description: >-
   The name of a person who donated a collection of archival materials.
 type: object
 allOf:
-  - $ref: donor
+  - $ref: donor.yaml
 properties:
   birthDate:
-    $ref: birthDate
+    $ref: birthDate.yaml
 
   deathDate:
-    $ref: deathDate
+    $ref: deathDate.yaml

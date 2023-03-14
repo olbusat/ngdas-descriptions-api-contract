@@ -42,10 +42,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/GetRecordGroupsResponse'
+                $ref: models/GetRecordGroupsResponse.yaml
               examples:
                 mandatoryPropertiesOnly:
-                  $ref: '#/components/examples/RecordGroupsPage'
+                  $ref: examples/record-groups/RecordGroupsPage.yaml
           description: >-
             A page of Record Groups    
     post:
@@ -115,7 +115,7 @@ paths:
                 $ref: 'models/RecordGroup.yaml'
               examples:
                 mandatoryPropertiesOnly:
-                  $ref: '#/components/examples/SingleRecordGroup'
+                  $ref: examples/record-groups/mandatoryPropertiesOnly.yaml
           description: >-
             A single Record Group
   
@@ -141,10 +141,10 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/GetCollectionsResponse'
+                $ref: models/GetCollectionsResponse.yaml
               examples:
-                mandatoryPropertiesOnly:
-                  $ref: '#/components/examples/CollectionsPage'
+                collectionsWithMandatoryProps:
+                  $ref: examples/collections/collectionsWithMandatoryProps.yaml
           description: >-
             A page of Collections
     post:
@@ -192,7 +192,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/StoredCollection'
+                $ref: models/Collection.yaml
               examples:
                 mandatoryPropertiesOnly:
                   $ref: '#/components/examples/SingleCollection'
@@ -341,19 +341,6 @@ components:
       items:
         $ref: '#/components/schemas/Series'
 
-    GetRecordGroupsResponse:
-      description: > 
-        A list of Record Group archival descriptions.
-      type: array
-      items:
-        $ref: '#/components/schemas/StoredRecordGroup'
-
-    GetCollectionsResponse:
-      description: > 
-        A list of Collection archival descriptions.
-      type: array
-      items:
-        $ref: '#/components/schemas/StoredCollection'
 
     RecordGroupAndCollectionCommonProperties: 
       description: Parent object encapsulating 'RecordGroup' and 'Collection' common properties
@@ -670,35 +657,6 @@ components:
         - status: 400
           entityCode: "721"
 
-    RecordGroupsPage:
-      value:
-        - naid: 406
-          recordGroupNumber: 77
-          title: "Records of the Office of the Chief of Engineers"
-          inclusiveStartDate: "01/01/1789"
-          inclusiveEndDate: "12/31/1999"
-          descriptionType: "recordGroup"
-        - naid: 721
-          recordGroupNumber: 432
-          title: "Records of the Economic Stabilization Programs"
-          inclusiveStartDate: "01/01/1971"
-          inclusiveEndDate: "12/31/1974"
-          descriptionType: "recordGroup"
-
-    CollectionsPage:
-      value:
-        - naid: 63542091
-          collectionIdentifier: "BHO-AC"
-          title: "Barack Obama Artifact Collection"
-          inclusiveStartDate: "01/20/2009"
-          inclusiveEndDate: "01/20/2017"
-          descriptionType: "collection"
-        - naid: 596989
-          collectionIdentifier: "RN-VP"
-          title: "Pre-Presidential Papers of Richard M. Nixon"
-          inclusiveStartDate: "01/01/1946"
-          inclusiveEndDate: "12/31/1963"
-          descriptionType: "collection"
 
     SingleCollection:
       value:
@@ -708,15 +666,6 @@ components:
         inclusiveStartDate: "01/20/2009"
         inclusiveEndDate: "01/20/2017"
         descriptionType: "collection"
-
-    SingleRecordGroup:
-      value:
-        naid: 406
-        recordGroupNumber: 77
-        title: "Records of the Office of the Chief of Engineers"
-        inclusiveStartDate: "01/01/1789"
-        inclusiveEndDate: "12/31/1999"
-        descriptionType: "recordGroup"
 
     TwoRecordGroupsToCreate:
       value:

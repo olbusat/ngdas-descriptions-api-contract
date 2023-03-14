@@ -1,0 +1,5 @@
+description: > 
+  A list of Record Group archival descriptions.
+type: array
+items:
+  $ref: RecordGroup.yaml

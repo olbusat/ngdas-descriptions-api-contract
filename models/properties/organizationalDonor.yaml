@@ -7,10 +7,10 @@ description: >-
   can be any entity other than an individual.
 type: object
 allOf:
-  - $ref: donor
+  - $ref: donor.yaml
 properties:
   abolishDate:
-    $ref: abolishDate
+    $ref: abolishDate.yaml
 
   establishDate:
-    $ref: establishDate
+    $ref: establishDate.yaml
