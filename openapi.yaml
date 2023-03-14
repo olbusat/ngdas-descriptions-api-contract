@@ -1,4 +1,3 @@
-
 openapi: 3.0.3
 info:
   title: NextGen DAS | Descriptions API
@@ -436,7 +435,7 @@ components:
         - inclusiveEndDate
         - descriptionType
     
-    StoredCollection: 
+    StoredCollection:
       description: Collection archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#record">See mandatory properties list</a>
       type: object
       allOf:

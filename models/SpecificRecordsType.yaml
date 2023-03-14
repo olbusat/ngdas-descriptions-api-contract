@@ -5,50 +5,50 @@ description: Describes the intellectual format of the archival materials.
 type: object
 properties:
   authorityType:
-    $ref: properties/authorityType
+    $ref: properties/authorityType.yaml
 
   broaderTerms:
     type: array
     items:
-      $ref: properties/broaderTerm
+      $ref: properties/broaderTerm.yaml
 
   heading:
-    $ref: properties/heading
+    $ref: properties/heading.yaml
 
   importRecordControlNumber:
-    $ref: properties/importRecordControlNumber
+    $ref: properties/importRecordControlNumber.yaml
 
   linkCounts:
-    $ref: properties/specificRecordsTypeLinkCounts
+    $ref: properties/specificRecordsTypeLinkCounts.yaml
 
   naId:
-    $ref: properties/naId
+    $ref: properties/naId.yaml
 
   narrowerTerms:
     type: array
     items:
-      $ref: properties/narrowerTerm
+      $ref: properties/narrowerTerm.yaml
 
   recordType:
-    $ref: properties/recordType
+    $ref: properties/recordType.yaml
 
   recordSource:
-    $ref: properties/recordSource
+    $ref: properties/recordSource.yaml
 
   relatedTerms:
     type: array
     items:
-      $ref: properties/relatedTerm
+      $ref: properties/relatedTerm.yaml
 
   scopeNote:
-    $ref: properties/scopeNote
+    $ref: properties/scopeNote.yaml
 
   sourceNotes:
     type: array
     items:
-      $ref: properties/sourceNote
+      $ref: properties/sourceNote.yaml
 
   useFor:
     type: array
     items:
-      $ref: properties/useFor
+      $ref: properties/useFor.yaml

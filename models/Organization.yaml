@@ -5,44 +5,44 @@ description: Describes the purpose, history, function and relation to other orga
 type: object
 properties:
   administrativeHistoryNote:
-    $ref: properties/administrativeHistoryNote
+    $ref: properties/administrativeHistoryNote.yaml
 
   authorityType:
-    $ref: properties/authorityType
+    $ref: properties/authorityType.yaml
 
   jurisdictions:
     type: array
     items:
-      $ref: properties/jurisdiction
+      $ref: properties/jurisdiction.yaml
 
   heading:
-    $ref: properties/heading
+    $ref: properties/heading.yaml
 
   linkCounts:
-    $ref: properties/orgLinkCounts
+    $ref: properties/orgLinkCounts.yaml
 
   naId:
-    $ref: properties/naId
+    $ref: properties/naId.yaml
 
   organizationNames:
     type: array
     items:
-      $ref: properties/organizationName
+      $ref: properties/organizationName.yaml
 
   personalReferences:
     type: array
     items:
-      $ref: properties/authorityReference
+      $ref: properties/authorityReference.yaml
 
   programAreas:
     type: array
     items:
-      $ref: properties/programArea
+      $ref: properties/programArea.yaml
 
   recordType:
-    $ref: properties/recordType
+    $ref: properties/recordType.yaml
 
   sourceNotes:
     type: array
     items:
-      $ref: properties/sourceNote
+      $ref: properties/sourceNote.yaml
