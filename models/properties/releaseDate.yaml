@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: releaseDate
 description: The date on which the audiovisual item was released for distribution.

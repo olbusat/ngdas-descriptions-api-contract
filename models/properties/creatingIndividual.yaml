@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: creatingIndividual
 description: >-
   A person responsible for the creation, accumulation, or maintenance of the series when in

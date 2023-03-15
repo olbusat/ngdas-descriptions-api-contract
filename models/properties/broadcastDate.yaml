@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: broadcastDate
 description: >-
   The date on which the item was first broadcast or another known broadcast date, 

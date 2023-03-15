@@ -1,10 +1,6 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: internalTransferNumber
 description: >-
   The unique identifier assigned to a group of archival materials that was transferred within NARA.
   This type of information is particularly important for archival materials that have been regionalized.
 type: string
-examples:
-  - NNTR-S-94-155
-  - NN3-74-89-001
+example: NNTR-S-94-155

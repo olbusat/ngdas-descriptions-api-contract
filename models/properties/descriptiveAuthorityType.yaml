@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: descriptiveAuthorityType
 description: >-
   The type of primary authority used to control specific terms that help describe archival materials.

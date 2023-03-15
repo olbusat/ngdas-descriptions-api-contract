@@ -1,8 +1,5 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: dateNote
 description: >-
   The explanation of various dates or predominant bulk dates or gaps in the archival materials.
 type: string
-examples:
-  - The bulk of these are from the period from 1940 to mid-1960s.
+example: The bulk of these are from the period from 1940 to mid-1960s.

@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: personalTitle
 description: >-
@@ -6,7 +6,7 @@ description: >-
   office, or nobility; terms of address (Mr., Mrs.); initials for an academic degree (MBA, Dr),
   a roman numeral used with a surname; or other phrases associated with a name (Saint, Statesman).
 type: string
-examples:
+example:
   - Chief
   - Jr.
   - Queen of Great Britain

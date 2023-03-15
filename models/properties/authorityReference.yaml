@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: authorityReference
 description: >-
   Heading and identifier of a primary authority record.  Represents a relationship between

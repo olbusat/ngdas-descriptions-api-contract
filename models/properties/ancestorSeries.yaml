@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: ancestorSeries
 description: >-
   Identifiable and pertinent information that represents a series that is a parent

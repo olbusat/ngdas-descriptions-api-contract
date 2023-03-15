@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: recordGroupNumber
 description: > 
@@ -6,6 +6,6 @@ description: >
 type: integer
 minimum: 1
 maximum: 1000
-examples:
+example:
   - 5
   - 59

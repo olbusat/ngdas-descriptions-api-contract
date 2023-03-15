@@ -1,10 +1,10 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: scopeNote
 description: >-
   A note explaining the coverage, specialized usage, and/or rules for assigning the authority.
 type: string
-examples:
+example:
   - >-
     Assign this heading to holdings limited to the indigenous Arctic peoples of Greenland, 
     Canada, and northern Alaska.

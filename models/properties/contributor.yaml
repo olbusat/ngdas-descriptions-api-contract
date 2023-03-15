@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: contributor
 description: >-
   An organization or person, other than the archival creator, responsible for the

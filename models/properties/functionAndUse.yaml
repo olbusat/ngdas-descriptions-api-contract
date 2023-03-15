@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: functionAndUse
 description: >-
@@ -8,10 +8,6 @@ description: >-
   of the archival materials. The scopeAndContentNote value is what is in the archival
   materials.
 type: string
-examples:
-  - >-
-    The Reports of Death were created at field hospitals or by battlefield commanders and 
-    were later used by Sextons to complete Internment Records.
-  - >-
-    The minute books were created to record the court's activities on a daily basis, 
-    including both criminal and civil litigation.
+example: >-
+  The Reports of Death were created at field hospitals or by battlefield commanders and 
+  were later used by Sextons to complete Internment Records.

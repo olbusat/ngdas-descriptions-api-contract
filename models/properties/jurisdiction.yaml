@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: jurisdiction
 description: >-
@@ -12,6 +12,4 @@ properties:
   name:
     description: The name of the jurisdiction
     type: string
-    examples:
-      - Japan (Asia) nation
-      - Aomori (Tohoku-chiho, Japan, Asia) prefecture
+    example: Aomori (Tohoku-chiho, Japan, Asia) prefecture

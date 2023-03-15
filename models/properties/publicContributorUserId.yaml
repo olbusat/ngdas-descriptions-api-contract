@@ -1,8 +1,8 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: publicContributorUserId
 description: Unique identifier of a user who made the public contribution.
 type: integer
-examples:
+example:
   - 56897
   - 91991

@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: ancestorDescription
 description: Base model for ancestors (parent, grandparent, etc..) to descriptions
 type: object

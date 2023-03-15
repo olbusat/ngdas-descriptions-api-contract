@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: scaleNote
 description: >-
@@ -6,6 +6,6 @@ description: >-
   numerical ratio to one, which may have been computed from the verbal or bar
   scales included on the materials.
 type: string
-examples:
+example:
   - 1 inch to approximately 90 miles.
   - The charts are drawn at the 1:250,000 scale (one inch equals 3.43 nautical miles).

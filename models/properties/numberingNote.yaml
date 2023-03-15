@@ -1,9 +1,9 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: numberingNote
 description: The explanation of an agency or NARA-assigned numbering scheme.
 type: string
-examples:
+example:
   - >-
     Requests for case files in this series must include the final certificate
     number, which is often found in tract books or on patent documents. When

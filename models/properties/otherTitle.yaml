@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: otherTitle
 description: >-
@@ -7,6 +7,6 @@ description: >-
   title, or an informal title. Variant titles include those that do not meet NARA
   standards for the formation of a title.
 type: string
-examples:
+example:
   - Index to Series Described in Entry 36
   - French Revenge Around Verdun

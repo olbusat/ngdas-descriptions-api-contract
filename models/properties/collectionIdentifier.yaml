@@ -1,12 +1,7 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: collectionIdentifier
 description: >
   The <a href="https://www.archives.gov/research/catalog/lcdrg/elements/collectionid.html">unique identifier</a> assigned to a Collection.
 type: string
 minLength: 1
 maxLength: 10
-examples:
-  - COLSA
-  - BYRD
-  - JC-1132
+example: JC-1132

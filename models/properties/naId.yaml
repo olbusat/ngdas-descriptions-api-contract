@@ -1,8 +1,6 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: naId
 description: National Archives Identifier
 type: integer
-examples:
-  - 401
-  - 1138498
+example: 401

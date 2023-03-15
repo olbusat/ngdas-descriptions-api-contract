@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: referenceUnit
 description: Contact information of the unit that provides reference services for the archival materials.
@@ -7,60 +7,60 @@ properties:
   address1:
     type: string
     description: Street address of the point of contact / reference unit.
-    examples:
+    example:
       - 17101 Huron Street
 
   address2:
     type: string
     description: Street address of the point of contact / reference unit.
-    examples:
+    example:
       - Suite 100
 
   city:
     type: string
     description: City portion of address of the point of contact / reference unit.
-    examples:
+    example:
       - Bloomfield
 
   email:
     format: email
     type: string
     description: Email address of the point of contact / reference unit.
-    examples:
+    example:
       - denver.archives@nara.gov
 
   fax:
     type: string
     description: Fax number of the point of contact / reference unit
-    examples:
+    example:
       - 303-604-4750
 
   mailCode:
     type: string
     description: Internal mailing code of the point of contact / reference unit.
-    examples:
+    example:
       - RM-DV
 
   name:
     type: string
     description: Name of the point of contact / reference unit
-    examples:
+    example:
       - National Archives at Denver
 
   phone:
     type: string
     description: Phone number of the point of contact / reference unit.
-    examples:
+    example:
       - 303-604-4740
 
   postalCode:
     type: string
     description: Postal code of the point of contact / reference unit.
-    examples:
+    example:
       - '80023'
 
   state:
     type: string
     description: State portion of address of the point of contact / reference unit.
-    examples:
+    example:
       - CO

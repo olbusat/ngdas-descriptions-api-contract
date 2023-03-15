@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: productionSeriesNumber
 description: >-
@@ -7,7 +7,7 @@ description: >-
   "series" is used in a non-archival sense.  It specifically refers to motion pictures or
   videotapes produced as a series, such as a television series or movie serials.
 type: string
-examples:
+example:
   - Episode #101
   - No. 2
   - Series 1

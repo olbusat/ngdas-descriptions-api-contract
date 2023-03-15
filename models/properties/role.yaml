@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: role
 description: Identifies roles that this person or organization fills.
@@ -7,27 +7,27 @@ properties:
   contributor:
     description: Indicates if the person or organization acts as a contributor.
     type: boolean
-    examples:
+    example:
       - true
       - false
 
   creator:
     description: Indicates if the person or organization acts as a contributor.
     type: boolean
-    examples:
+    example:
       - true
       - false
 
   donor:
     description: Indicates if the person or organization acts as a donor
     type: boolean
-    examples:
+    example:
       - true
       - false
 
   reference:
     description: Indicates if the person or organization is referenced by another person or org
     type: boolean
-    examples:
+    example:
       - true
       - false

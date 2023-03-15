@@ -1,8 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: distance
 description: Indicates number of nodes removed an ancestor is from a descendent description.
 type: integer
-examples:
-  - 1
-  - 2
+example: 1

@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: creator
 description: >-
   The name of a person or organization responsible for the creation, accumulation, or maintenance 

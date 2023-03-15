@@ -1,8 +1,18 @@
 - naid: 63542091
   collectionIdentifier: "BHO-AC"
   title: "Barack Obama Artifact Collection"
-  inclusiveStartDate: "01/20/2009"
-  inclusiveEndDate: "01/20/2017"
+  inclusiveStartDate:
+    day: 0
+    logicalDate": "2009-01-20"
+    month: 0
+    qualifier: "string"
+    year": 0
+  inclusiveEndDate: 
+    day: 0
+    logicalDate": "2017-01-20"
+    month: 0
+    qualifier: "string"
+    year": 0
   descriptionType: "collection"
 - naid: 596989
   collectionIdentifier: "RN-VP"

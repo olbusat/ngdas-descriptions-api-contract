@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: topicalSubjectLinkCounts
 description: Tracks the number and manner of the relationships to a topical subject authority record.
@@ -7,20 +7,20 @@ properties:
   subject:
     description: Total number of times this topical subject acts as the subject of archival materials.
     type: integer
-    examples:
+    example:
       - 77
       - 910
 
   topicalSubject:
     description: Total number of times this topical subject is referred to in another topical subject.
     type: integer
-    examples:
+    example:
       - 3
       - 349
 
   totalDescription:
     description: Total number of times this topical subject is referred to, in any way, in archival materials.
     type: integer
-    examples:
+    example:
       - 101
       - 324

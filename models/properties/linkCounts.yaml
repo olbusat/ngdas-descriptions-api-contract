@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: linkCounts
 description: Tracks the number and manner of the relationships between records.
@@ -7,6 +7,4 @@ properties:
   totalDescription:
     description: Total number of times this person is referred to, in any way, in archival materials.
     type: integer
-    examples:
-      - 101
-      - 324
+    example: 101

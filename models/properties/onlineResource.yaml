@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: onlineResource
 description: >-
@@ -12,7 +12,7 @@ properties:
   description:
     type: string
     description: Textual description of the type of online resource.
-    examples:
+    example:
       - Access to Archival Databases (AAD) system
       - Filing Manual
 
@@ -21,7 +21,7 @@ properties:
     description: >-
       Explanations or significant information regarding an Online Resource in
       relation to the archival materials being described.
-    examples:
+    example:
       - >-
         The electronic records in some of the files in this series can be
         searched online via the Access to Archival Databases (AAD) system.
@@ -30,6 +30,6 @@ properties:
   url:
     type: string
     description: The URL associated with an Online Resource.
-    examples:
+    example:
       - http://www.archives.gov/research/order/orderonline.html
       - http://www.maritime.org/navyfile/index.htm

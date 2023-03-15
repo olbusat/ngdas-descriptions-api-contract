@@ -1,8 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: beginCongress
 description: The beginning number of the Congress during which the archival materials were created.
 type: integer
-examples:
-  - 27
-  - 103
+example: 27

@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: coordinates
 description: >-
   Indicates the position of the place, expressed in degrees/minutes/seconds in accor. Latitude is the angular 
@@ -8,6 +6,4 @@ description: >-
   imaginary north-south lines on the Earth's surface that connect both geographic poles, used to 
   measure longitude.
 type: string
-examples:
-  - 16 00 N, 106 00 E (16, 106)
-  - 40 10 N, 087 45 W (40.167, -87.75)
+example: 16 00 N, 106 00 E (16, 106)

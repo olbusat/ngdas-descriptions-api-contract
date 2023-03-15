@@ -1,8 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: fullerFormOfName
 description: "A more complete form of a person's name than is indicated in the name field."
 type: string
-examples:
-  - (John Fitzgerald),
-  - (William Childs),
+example: (John Fitzgerald),

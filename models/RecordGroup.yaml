@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: RecordGroup
 description: >-
@@ -8,46 +8,51 @@ description: >-
 
   <p>
   This object doesn't have NAID. See `StoredRecordGroup` definition if you look for the same object but with NAID property
-  </p>
+  </p>  
 type: object
 properties:
-  allOf:
-    - $ref: RecordGroupAndCollectionBase.yaml
-    - beginCongress:
-      $ref: properties/beginCongress.yaml
-    - coverageEndDate:
-      $ref: properties/coverageEndDate.yaml
-    - coverageStartDate:
-      $ref: properties/coverageStartDate.yaml
-    - dataControlGroup:
-      $ref: properties/dataControlGroup.yaml
-    - dateNote:
-      $ref: properties/dateNote.yaml
-    - endCongress:
-      $ref: properties/endCongress.yaml
-    - findingAids:
-      type: array
-      items:
-        $ref: properties/findingAid.yaml
-    - formerlyContained:
-      $ref: properties/formerlyContained.yaml
-    - levelOfDescription:
-      $ref: properties/levelOfDescription.yaml
-    - partyDesignation:
-      $ref: properties/partyDesignation.yaml
-    - recordGroupNumber:
-      $ref: properties/recordGroupNumber.yaml
-    - referenceUnits:
-      type: array
-      items:
-        $ref: properties/referenceUnit.yaml
-    - scopeAndContentNote:
-      $ref: properties/scopeAndContentNote.yaml
-    - seriesCount:
-      $ref: properties/seriesCount.yaml
+  title:
+    $ref: properties/title.yaml
+  recordGroupNumber:
+    $ref: properties/recordGroupNumber.yaml
+  descriptionType:
+    $ref: properties/levelOfDescription.yaml
+  inclusiveStartDate:
+    $ref: properties/inclusiveStartDate.yaml
+  inclusiveEndDate:
+    $ref: properties/inclusiveEndDate.yaml      
+  beginCongress:
+    $ref: properties/beginCongress.yaml
+  endCongress:
+    $ref: properties/endCongress.yaml
+  coverageStartDate:
+    $ref: properties/coverageStartDate.yaml
+  coverageEndDate:
+    $ref: properties/coverageEndDate.yaml
+  dataControlGroup:
+    $ref: properties/dataControlGroup.yaml
+  dateNote:
+    $ref: properties/dateNote.yaml
+  findingAids:
+    type: array
+    items:
+      $ref: properties/findingAid.yaml
+  formerlyContained:
+    $ref: properties/formerlyContained.yaml
+  partyDesignation:
+    $ref: properties/partyDesignation.yaml
+  referenceUnits:
+    type: array
+    items:
+      $ref: properties/referenceUnit.yaml
+  scopeAndContentNote:
+    $ref: properties/scopeAndContentNote.yaml
+  seriesCount:
+    $ref: properties/seriesCount.yaml
+
 required:
+  - title
+  - recordGroupNumber
   - inclusiveEndDate
   - inclusiveStartDate
-  - levelOfDescription
-  - recordGroupNumber
-  - title
+  - descriptionType

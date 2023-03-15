@@ -1,10 +1,6 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: dispositionAuthorityNumber
 description: >-
   The unique identifier assigned by NARA to a category of records indicating that their
   disposition has been approved by NARA.  This is also known as the schedule number.
 type: string
-examples:
-  - N1-370-90-3, item 1501-16a
-  - N1-59-91-33, item 1
+example: N1-370-90-3, item 1501-16a

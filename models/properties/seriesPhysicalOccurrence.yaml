@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: seriesPhysicalOccurrence
 description: Details about the physical occurrence of archival materials within a series.
@@ -11,7 +11,7 @@ properties:
     description: >-
       The listing of the starting and ending titles of the contents of each
       container in which the archival materials are stored.
-    examples:
+    example:
       - >-
         Volume 1: A - D
         Volume 2: E - H

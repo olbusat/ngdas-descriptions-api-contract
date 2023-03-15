@@ -1,9 +1,9 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: pageNum
 description: >-
   The page number of a digital object that is the target of a contribution, if applicable.
 type: integer
-examples:
+example:
   - 100
   - 2

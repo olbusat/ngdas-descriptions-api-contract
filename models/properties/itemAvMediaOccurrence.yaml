@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: itemAvMediaOccurrence
 description: Additional media occurrence information available for audtiovisual items.
 type: object
@@ -11,9 +9,7 @@ properties:
     description: >-
       The substance of the media used to physically carry or hold the information
       in the archival item. Also called the substrate.
-    examples:
-      - Cellulose Acetate
-      - Paper
+    example: Cellulose Acetate
 
   elementNumber:
     type: integer
@@ -23,23 +19,17 @@ properties:
       or when a film reel is composed of A and B rolls. For example, a film reel may be composed
       of an image reel and a soundtrack reel. The image reel could be designated element number
       1, and the soundtrack reel could be designated element number 2.
-    examples:
-      - 1
-      - 2
+    example: 1
 
   emulsion:
     type: string
     description: The type of coating that is bonded to and supported by the base of the specific media type.
-    examples:
-      - Metal Evaporation
-      - Ferric Oxide
+    example: Metal Evaporation
 
   footage:
     type: integer
     description: The length in feet for an individual roll or reel in an audiovisual item.
-    examples:
-      - 502
-      - 465
+    example: 502
 
   format:
     type: string
@@ -48,9 +38,7 @@ properties:
       videotape can be VHS or Betamax, the format for sound recordings can be Master or Stamper
       Matrix, or the format for motion pictures can be Duplicate Negative Composite or Master
       Projection Print Composite.
-    examples:
-      - 'Dication Belt: Magnabelt'
-      - 'Sound: Mass Produced Pressing'
+    example: 'Dication Belt: Magnabelt'
 
   otherPreservationCharacteristics:
     type: array
@@ -63,16 +51,12 @@ properties:
       The speed at which audio recordings are recorded or reproduced. For audio tapes, the
       measurement is inches per second (ips). For audio discs or cylinders, the measurement
       is revolutions per minute (rpm).
-    examples:
-      - 'Audio Disk: 120 rpm'
-      - 'Audio Tape: 15 ips'
+    example: 'Audio Disk: 120 rpm'
 
   reelTapeDiscNumber:
     type: integer
     description: Could not find description in LCDRG
-    examples:
-      - 44
-      - 3
+    example: 44
 
   roll:
     type: string
@@ -81,42 +65,30 @@ properties:
       are typically assembled in checkerboard fashion on two or more different rolls with black
       leaders between scenes to facilitate fades and dissolves and to ultimately produce a single
       strip master positive from which a duplicating negative (dupe neg) can then be made.
-    examples:
-      - A Roll
-      - B Roll
+    example: A Roll
 
   runningTime:
     type: integer
     description: >-
       The duration in seconds of the individual parts (reels, tapes, rolls) of an audiovisual item.
-    examples:
-      - 7200
-      - 290
+    example: 7200
 
   soundtrackConfiguration:
     type: string
     description: The recording configuration of a sound recording or motion picture soundtrack.
-    examples:
-      - 'Film: Variable Area, Push-pull'
-      - 'Sound: Dual'
+    example: 'Film: Variable Area, Push-pull'
 
   soundtrackLanguage:
     type: string
     description: The language of the soundtrack for a motion picture or video recording.
-    examples:
-      - Dutch
-      - German
+    example: Dutch
 
   tapeThickness:
     type: string
     description: The thickness of the tape on which the audiovisual item has been recorded.
-    examples:
-      - 0.5 mil
-      - 1.0 mil
+    example: 0.5 mil
 
   wind:
     type: string
     description: The playback direction of the reel/roll.
-    examples:
-      - A Wind
-      - B Wind
+    example: A Wind

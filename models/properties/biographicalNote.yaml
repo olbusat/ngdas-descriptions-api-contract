@@ -1,15 +1,14 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: biographicalNote
 description: >-
   Explanations or significant information relevant to the understanding of a person's
   life or activities.
 type: string
-examples:
-  - >-
-    Sarah Weddington was born in Abilene Texas in 1945. In 1965 she received her B.S. degree
-    from McMurry College in Abilene, and in 1967 her J.D. from the University of Texas, Austin.
-    She was a Texas state legislator and in private practice in Austin from 1972 to 1977, when she
-    came to Washington to be the General Counsel of the Department of Agriculture. In October 1978
-    she became Special Assistant (Assistant after September 1979) to the President for Women's
-    Affairs. In 1981 she returned to Austin to practice law.
+example: >-
+  Sarah Weddington was born in Abilene Texas in 1945. In 1965 she received her B.S. degree
+  from McMurry College in Abilene, and in 1967 her J.D. from the University of Texas, Austin.
+  She was a Texas state legislator and in private practice in Austin from 1972 to 1977, when she
+  came to Washington to be the General Counsel of the Department of Agriculture. In October 1978
+  she became Special Assistant (Assistant after September 1979) to the President for Women's
+  Affairs. In 1981 she returned to Austin to practice law.

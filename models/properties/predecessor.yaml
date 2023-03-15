@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: predecessor
 description: The name and identifier of the immediate predecessor organization.

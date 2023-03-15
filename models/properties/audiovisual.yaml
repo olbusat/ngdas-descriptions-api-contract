@@ -1,8 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: audiovisual
 description: Indicates if a file unit or series is audio-visual in nature.
 type: boolean
-examples:
-  - True
-  - False

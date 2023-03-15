@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: dataControlGroup
 description: Defines which office within NARA owns or is the custodian of the archival record.
 type: object
@@ -7,17 +5,14 @@ properties:
   groupId:
     type: string
     description: Group identifier
-    examples:
-      - RDTP1
+    example: RDTP1
 
   groupCode:
     type: string
     description: A list of organizational units that describe a data control group.
-    examples:
-      - ou=RDTP1,ou=groups
+    example: ou=RDTP1,ou=groups
 
   groupName:
     type: string
     description: The name of the data control group.
-    examples:
-      - National Archives at Washington, DC - Textual Reference
+    example: National Archives at Washington, DC - Textual Reference

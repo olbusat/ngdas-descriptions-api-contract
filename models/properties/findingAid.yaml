@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: findingAid
 description: >-
@@ -8,44 +8,35 @@ properties:
   fileFormat:
     type: string
     description: The type or file format of the online finding aid.
-    examples:
-      - HTML
-      - Microsoft Word Document
+    example: Microsoft Word Document
 
   findingAidtype:
     type: string
     description: The type of finding aid.
-    examples:
-      - Index
-      - Prelim. Checklist
+    example: Prelim. Checklist
 
   note:
     type: string
     description: The explanation of significant information about a finding aid.
-    examples:
-      - An alphabetical list of cities can be found in the research room.
+    example: An alphabetical list of cities can be found in the research room.
 
   source:
     type: string
     description: The author or creator of the finding aid.
-    examples:
-      - National Archives and Records Administration
+    example: National Archives and Records Administration
 
   url:
     type: string
     format: uri
     description: The URL associated with a finding aid.
-    examples:
-      - http://www.archives.gov/rocky-mountain/finding-aids/naturalization/
+    example: http://www.archives.gov/rocky-mountain/finding-aids/naturalization/
 
   urlNote:
     type: string
     description: Explanation of significant information about a finding aid url.
-    examples:
-      - This Online Resource URL is a finding aid for naturalizations.
+    example: This Online Resource URL is a finding aid for naturalizations.
 
   urlDescription:
     type: string
     description: Description of the information contained at a finding aid url
-    examples:
-      - This Online Resource URL is a finding aid for naturalizations.
+    example: This Online Resource URL is a finding aid for naturalizations.

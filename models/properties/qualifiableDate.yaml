@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: qualifiableDate
 description: A datetime with the means to qualify uncertainty.
@@ -7,7 +7,7 @@ properties:
   day:
     type: integer
     description: Day of month in DD format (1-31)
-    examples:
+    example:
       - 25
 
   logicalDate:
@@ -17,25 +17,25 @@ properties:
       Day, month, and year combined into a <a href='https://www.iso.org/iso-8601-date-and-time-format.html'>
       ISO 8601</a> date format: CCYY-MM-DD If day or month is unknown, they are replaced by 01-01 or 12-31
       in this representation.
-    examples:
+    example:
       - '2020-12-25'
       - '2020-12-23'
 
   month:
     type: integer
     description: Month of year in MM format (1-12)
-    examples:
+    example:
       - 12
 
   qualifier:
     type: string
     description: The means for indicating an uncertain or approximate date.
-    examples:
+    example:
       - ca.
       - '?'
 
   year:
     type: integer
     description: Year in YYYY format
-    examples:
+    example:
       - 2020

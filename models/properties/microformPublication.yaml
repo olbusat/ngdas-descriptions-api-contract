@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: microformPublication
 description: >-
@@ -11,7 +11,7 @@ properties:
     type: string
     description: >-
       The unique identifier associated with a microform publication.
-    examples:
+    example:
       - A3354
       - M1131
       - T228
@@ -21,13 +21,13 @@ properties:
     description: >-
       Explanations or significant information regarding a microform publication
       in relation to the archival materials being described.
-    examples:
+    example:
       - These records have been reproduced in full in this microform publication.
       - Records in this series from 1917-1920 are available in this microform publication.
 
   title:
     type: string
     description: The unique title associated with a microform publication.
-    examples:
+    example:
       - Dunn Rolls of 1867 and 1869, Citizens and Freedmen of the Creek Nation, 1867-1869
       - Captured North Vietnamese Documents of the Combined Document Exploitation Center, 1950-1975

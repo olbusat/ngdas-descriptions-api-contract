@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: holdingsMeasurement
 description: >-
   The unit and quantity of the archival materials in the series.
@@ -12,17 +10,13 @@ properties:
       the number of artifacts in the series. For electronic data, it counts the number
       of logical data records in the series. For all other records, it counts the number
       of each type of physical container in which archival materials are stored.
-    examples:
-      - 267
-      - .5
-
+    example: 267
+ 
   type:
     type: string
     description: >-
       The unit by which archival materials are counted physically for performance measures.
-      The unit is either a physical container or physical entity. Examples of physical
+      The unit is either a physical container or physical entity. example of physical
       containers include legal-size or letter-size boxes, aerial film cans, cabinet drawers,
       and bound volumes. Physical entities include artifacts and logical data records.
-    examples:
-      - LTA-S
-      - MAP-1
+    example: LTA-S

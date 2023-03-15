@@ -1,6 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: abolishDate
 description: The date on which the organization was terminated, disbanded, inactivated, or superseded.
-allOf:
-  - $ref: qualifiableDate.yaml
+$ref: qualifiableDate.yaml

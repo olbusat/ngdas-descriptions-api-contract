@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: orgLinkCounts
 description: >-
@@ -8,34 +8,34 @@ properties:
   contributor:
     description: Total number of times this organization acts as a contributor to archival materials.
     type: integer
-    examples:
+    example:
       - 0
       - 1
 
   creator:
     description: Total number of times this organiation acts as a creator for archival materials.
     type: integer
-    examples:
+    example:
       - 10
       - 15
 
   donor:
     description: Total number of times this object acts as a donor for archival material.
     type: integer
-    examples:
+    example:
       - 10
       - 13
 
   subject:
     description: Total number of times this organization acts as a subject to archival materials.
     type: integer
-    examples:
+    example:
       - 3
       - 349
 
   totalDescription:
     description: Total number of times this organization is referred to in an approved archival description.
     type: integer
-    examples:
+    example:
       - 101
       - 324

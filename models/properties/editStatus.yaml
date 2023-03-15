@@ -1,10 +1,6 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: editStatus
 description: >-
   The identification of the production or pre-production stage of audiovisual materials
   (motion pictures, sound recordings or video recordings).
 type: string
-examples:
-  - Edited
-  - Partially Edited
+example: Partially Edited

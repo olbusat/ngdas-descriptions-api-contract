@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: productionSeriesSubtitle
 description: >-
@@ -7,6 +7,6 @@ description: >-
   sense. It specifically refers to motion pictures, sound recordings, or videotapes produced as a
   series, such as a television series or movie serials.
 type: string
-examples:
+example:
   - Physics
   - America's Civil Rights Years (1954-1965)

@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: accessRestriction
 description: >-
   The indication of, explicit markings for, and detailed notes regarding access restrictions 
@@ -9,10 +7,9 @@ properties:
   note:
     type: string
     description: Significant information pertaining to the access restrictions on archival materials.
-    examples:
-      - >-
-        The records may be restricted due to privacy concerns. Register numbers 1 through 900
-        have been screened and are open for research.
+    example: >-
+      The records may be restricted due to privacy concerns. Register numbers 1 through 900
+      have been screened and are open for research.
 
   specificAccessRestrictions:
     type: array
@@ -23,7 +20,4 @@ properties:
     type: string
     description: >-
       The indication of whether or not there are access restrictions on the archival materials.
-    examples:
-      - Restricted - Partly
-      - Restricted - Possibly
-      - Unrestricted
+    example: Restricted - Partly

@@ -1,9 +1,9 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: shotList
 description: A shot-by-shot description of a film or video.
 type: string
-examples:
+example:
   - >-
     1) GV Wave of LCMs underway, Corregidor under bombardment BG-SV.2) GV Paratrooper descends
     to Corregidor, many parachutes lay on ground.3) MS Plane passes paratroopers descend to Corregidor

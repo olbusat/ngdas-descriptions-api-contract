@@ -1,8 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: contributionId
 description: Uniquely identifies a public contribution among other contributions of the same type.
 type: string
-examples:
-  - 72d186d6-8d88-11ec-b909-0242ac120002
-  - 82fb3958-8d88-11ec-b909-0242ac120002
+example: 72d186d6-8d88-11ec-b909-0242ac120002

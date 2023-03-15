@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: recordsCenterTransferNumber
 description: >-
@@ -6,6 +6,6 @@ description: >-
   into the physical custody of a records center. Formerly this was commonly known
   as the Records Center Accession Number
 type: string
-examples:
+example:
   - 490-88-0066A
   - 021-53T-0007P

@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: topicalSubjectReference
 description: The topics represented in the archival materials.

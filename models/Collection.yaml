@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: Collection
 description: >-
@@ -46,9 +46,6 @@ properties:
 
   inclusiveStartDate:
     $ref: properties/inclusiveStartDate.yaml
-
-  levelOfDescription:
-    $ref: properties/levelOfDescription.yaml
 
   referenceUnits:
     type: array

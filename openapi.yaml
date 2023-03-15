@@ -134,6 +134,9 @@ paths:
             application/json:
               schema:
                 $ref: models/GetCollectionsResponse.yaml
+              examples:
+                collectionsWithMandatoryProps:
+                  $ref: examples/collections/collectionsWithMandatoryProps.yaml
           description: >-
             A page of Collections
     post:
@@ -425,7 +428,7 @@ components:
         - inclusiveStartDate
         - inclusiveEndDate
 
-    Series:
+    SeriesAAAAAAAAAAAAA:
       description: Series archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#series">See mandatory properties list</a>
       type: object
       allOf:
@@ -484,26 +487,6 @@ components:
           example: "Restricted Data/Formerly Restricted Data"
           minLength: 1
           maxLength: 40
-
-    NaidStatusesResponse:
-      description: Itemised report for a batch operation
-      type: array
-      items:
-        allOf:
-          - $ref: '#/components/schemas/Naid'
-          - $ref: '#/components/schemas/OperationStatusCode'
-        required:
-          - naid
-          - status
-          
-    Naid:
-      description: NAID
-      type: object
-      properties:
-        naid:
-          description: NAID
-          type: integer
-          minimum: 0
           
     OperationStatusCode:
       type: object

@@ -1,4 +1,4 @@
-$schema: http://json-schema.org/draft-07/schema#
+
 
 title: digitalObject
 description: The digital representation of all or part of the archival materials being described.
@@ -7,50 +7,38 @@ properties:
   extractedText:
     description: Text that was able to be extracted from the digital object.
     type: string
-    examples:
-      - Four score and seven years ago our fathers brought forth...
-      - We the People of the United States, in Order to form a more perfect Union...
+    example: Four score and seven years ago our fathers brought forth...
 
   extractedTextAccurracy:
     description: >-
       A percentage representing how accurately the text extracted from the digital object matches the
       text displayed in the object.
     type: integer
-    examples:
-      - 50
-      - 97
+    example: 50
 
   objectDescription:
     description: A brief description of the digital object.
     type: string
-    examples:
-      - Only the first page of this 12-page letter is available online.
-      - Table of contents
+    example: Only the first page of this 12-page letter is available online.
 
   objectDesignator:
     description: >-
       An identifier for each digital object when there is more than one digital object associated
       with an archival description.
     type: string
-    examples:
-      - '1'
-      - Page 1
+    example: "Page 1"
 
   objectFileSize:
     description: >-
       The size in bytes of the computer file containing the access version of the digital object.
     type: integer
-    examples:
-      - 600000000
-      - 202000
+    example: 600000000
 
   objectFilename:
     description: >-
       The porition of the object URL that identifies the file without any directory or location.
     type: string
-    examples:
-      - 16-1557a.gif
-      - c43674A.jpg
+    example: 16-1557a.gif
 
   objectId:
     $ref: objectId
@@ -58,22 +46,16 @@ properties:
   objectType:
     description: The type or file format of the digital object.
     type: string
-    examples:
-      - World Wide Web Page
-      - Portable Document File (PDF)
+    example: World Wide Web Page
 
   objectUrl:
     description: >-
       The identifier assigned to the file containing the access version of the digital object.
     type: string
-    examples:
-      - https://nara-media-001.s3.amazonaws.com/arcmedia/media/images/16/16/16-1557a.gif
-      - http://www.reaganlibrary.archives.gov/photos/large/c43674A.jpg
+    example: https://nara-media-001.s3.amazonaws.com/arcmedia/media/images/16/16/16-1557a.gif
 
   thumbnailUrl:
     description: >-
       The identifier assigned to the file containing the thumbnail version of the digital object.
     type: string
-    examples:
-      - https://nara-media-001.s3.amazonaws.com/arcmedia/media/images/16/16/16-1557t.gif
-      - http://www.reaganlibrary.archives.gov/photos/large/c43674T.jpg
+    example: http://www.reaganlibrary.archives.gov/photos/large/c43674T.jpg

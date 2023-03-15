@@ -1,11 +1,6 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: generalRecordType
 description: >-
   The general intellectual form of the archival materials. Allows users 
   to search for archival materials by general records types.
 type: string
-examples:
-  - Data Files
-  - Photographs and other Graphic Materials
-  - Textual Records
+example: Photographs and other Graphic Materials

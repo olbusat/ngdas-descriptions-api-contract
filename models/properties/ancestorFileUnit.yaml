@@ -1,5 +1,3 @@
-$schema: http://json-schema.org/draft-07/schema#
-
 title: ancestorFileUnit
 description: >-
   Identifiable and pertinent information that represents a file unit that is a parent
