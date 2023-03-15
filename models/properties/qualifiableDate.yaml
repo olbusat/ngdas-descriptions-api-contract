@@ -19,6 +19,7 @@ properties:
       in this representation.
     examples:
       - '2020-12-25'
+      - '2020-12-23'
 
   month:
     type: integer

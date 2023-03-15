@@ -5,4 +5,4 @@ description: >-
   <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusiveend.html">The last date</a> 
   on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.  
 allOf:
-  - $ref: ./qualifiableDate.yaml
+  - $ref: qualifiableDate.yaml

@@ -55,10 +55,7 @@ paths:
       security: 
         - jwt: []
       requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/requestBodies/PostRecordGroupsRequest'
+        $ref: '#/components/requestBodies/PostRecordGroupsRequest'
       responses:
         '207':
           content:
@@ -137,9 +134,6 @@ paths:
             application/json:
               schema:
                 $ref: models/GetCollectionsResponse.yaml
-              examples:
-                collectionsWithMandatoryProps:
-                  $ref: examples/collections/collectionsWithMandatoryProps.yaml
           description: >-
             A page of Collections
     post:

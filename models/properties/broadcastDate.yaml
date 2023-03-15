@@ -5,4 +5,4 @@ description: >-
   The date on which the item was first broadcast or another known broadcast date, 
   if first date is unknown.
 allOf:
-  - $ref: qualifiableDate
+  - $ref: qualifiableDate.yaml
