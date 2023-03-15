@@ -6,10 +6,10 @@ description: >-
   series when in working (primary) use.
 type: object
 allOf:
-  - $ref: creator
+  - $ref: creator.yaml
 properties:
   abolishDate:
-    $ref: abolishDate
+    $ref: abolishDate.yaml
 
   establishDate:
-    $ref: establishDate
+    $ref: establishDate.yaml

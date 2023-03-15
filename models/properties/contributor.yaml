@@ -7,13 +7,13 @@ description: >-
 type: object
 properties:
   authorityType:
-    $ref: contextualAuthorityType
+    $ref: contextualAuthorityType.yaml
 
   contributorType:
-    $ref: contributorType
+    $ref: contributorType.yaml
 
   heading:
-    $ref: heading
+    $ref: heading.yaml
 
   naId:
-    $ref: naId
+    $ref: naId.yaml

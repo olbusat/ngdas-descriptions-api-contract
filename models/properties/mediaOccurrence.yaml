@@ -39,7 +39,7 @@ properties:
   generalMediaTypes:
     type: array
     items:
-      $ref: generalMediaType
+      $ref: generalMediaType.yaml
 
   height:
     type: number

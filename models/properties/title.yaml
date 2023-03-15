@@ -1,8 +1,12 @@
 $schema: http://json-schema.org/draft-07/schema#
 
 title: title
-description: The name assigned to the record group, collection, or archival materials.
+description: >
+  The name assigned to the record group, collection, or archival materials.
+  See <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#5">documentation</a>
 type: string
+minLength: 10
+maxLength: 700
 examples:
   - Inflation Sourcebook [1]
   - Lou Henry Hoover Papers

@@ -6,19 +6,19 @@ description: >-
 type: object
 properties:
   contributionSequence:
-    $ref: contributionSequence
+    $ref: contributionSequence.yaml
 
   createdAt:
-    $ref: createdAt
+    $ref: createdAt.yaml
 
   fullName:
-    $ref: publicContributorFullName
+    $ref: publicContributorFullName.yaml
 
   naraStaff:
-    $ref: publicContributorNaraStaff
+    $ref: publicContributorNaraStaff.yaml
 
   userId:
-    $ref: publicContributorUserId
+    $ref: publicContributorUserId.yaml
 
   userName:
-    $ref: publicContributorUserName
+    $ref: publicContributorUserName.yaml

@@ -5,5 +5,5 @@ description: >-
   Type of the primary authority used to control descriptive and entitic terms on archival materials.
 type: string
 anyOf:
-  - $ref: contextualAuthorityType
-  - $ref: descriptiveAuthorityType
+  - $ref: contextualAuthorityType.yaml
+  - $ref: descriptiveAuthorityType.yaml

@@ -12,35 +12,35 @@ properties:
   contributorTypes:
     type: array
     items:
-      $ref: contributorType
+      $ref: contributorType.yaml
 
   creatorTypes:
     type: array
     items:
-      $ref: creatorType
+      $ref: creatorType.yaml
 
   establishDate:
-    $ref: establishDate
+    $ref: establishDate.yaml
 
   heading:
-    $ref: heading
+    $ref: heading.yaml
 
   linkCounts:
     $ref: orgLinkCounts
 
   naId:
-    $ref: naId
+    $ref: naId.yaml
 
   name:
-    $ref: name
+    $ref: name.yaml
 
   predecessors:
     type: array
     items:
-      $ref: predecessor
+      $ref: predecessor.yaml
 
   recordSource:
-    $ref: recordSource
+    $ref: recordSource.yaml
 
   role:
     $ref: role
@@ -48,9 +48,9 @@ properties:
   successors:
     type: array
     items:
-      $ref: successor
+      $ref: successor.yaml
 
   variantOrganizationNames:
     type: array
     items:
-      $ref: variantOrganizationName
+      $ref: variantOrganizationName.yaml

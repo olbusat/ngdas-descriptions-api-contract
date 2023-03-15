@@ -6,7 +6,7 @@ description: >-
   parent or more distant ancestor to another archival description or control group.
 type: object
 allOf:
-  - $ref: ancestorDescription
+  - $ref: ancestorDescription.yaml
 properties:
   recordGroupNumber:
-    $ref: recordGroupNumber
+    $ref: recordGroupNumber.yaml

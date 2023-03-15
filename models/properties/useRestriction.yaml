@@ -17,7 +17,7 @@ properties:
   specificUseRestrictions:
     type: array
     items:
-      $ref: specificUseRestriction
+      $ref: specificUseRestriction.yaml
 
   status:
     type: string

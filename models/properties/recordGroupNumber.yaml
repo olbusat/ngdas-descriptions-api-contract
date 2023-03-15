@@ -1,8 +1,11 @@
 $schema: http://json-schema.org/draft-07/schema#
 
 title: recordGroupNumber
-description: The unique number assigned to a record group.
+description: > 
+  The <a href="https://www.archives.gov/research/catalog/lcdrg/elements/recordgroup.html">unique number</a> assigned to a Record Group.
 type: integer
+minimum: 1
+maximum: 1000
 examples:
   - 5
   - 59

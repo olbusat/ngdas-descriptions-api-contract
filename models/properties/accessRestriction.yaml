@@ -17,7 +17,7 @@ properties:
   specificAccessRestrictions:
     type: array
     items:
-      $ref: specificAccessRestriction
+      $ref: specificAccessRestriction.yaml
 
   status:
     type: string

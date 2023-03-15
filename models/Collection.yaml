@@ -50,12 +50,6 @@ properties:
   levelOfDescription:
     $ref: properties/levelOfDescription.yaml
 
-  naId:
-    $ref: properties/naId.yaml
-
-  recordType:
-    $ref: properties/recordType.yaml
-
   referenceUnits:
     type: array
     items:
@@ -80,6 +74,4 @@ required:
   - inclusiveEndDate
   - inclusiveStartDate
   - levelOfDescription
-  - naId
-  - recordType
   - title

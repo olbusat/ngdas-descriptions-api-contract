@@ -7,11 +7,11 @@ description: >-
 type: object
 properties:
   allOf:
-    $ref: ancestorDescription
+    $ref: ancestorDescription.yaml
 
   creators:
     type: array
     items:
       oneOf:
-        - $ref: creatingIndividual
-        - $ref: creatingOrganization
+        - $ref: creatingIndividual.yaml
+        - $ref: creatingOrganization.yaml

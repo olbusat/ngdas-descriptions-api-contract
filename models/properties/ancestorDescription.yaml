@@ -5,19 +5,19 @@ description: Base model for ancestors (parent, grandparent, etc..) to descriptio
 type: object
 properties:
   distance:
-    $ref: distance
+    $ref: distance.yaml
 
   inclusiveEndDate:
-    $ref: inclusiveEndDate
+    $ref: inclusiveEndDate.yaml
 
   inclusiveStartDate:
-    $ref: inclusiveStartDate
+    $ref: inclusiveStartDate.yaml
 
   levelOfDescription:
-    $ref: levelOfDescription
+    $ref: levelOfDescription.yaml
 
   naId:
-    $ref: naId
+    $ref: naId.yaml
 
   title:
-    $ref: title
+    $ref: title.yaml

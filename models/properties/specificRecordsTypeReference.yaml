@@ -3,4 +3,4 @@ $schema: http://json-schema.org/draft-07/schema#
 title: specificRecordsTypeReference
 description: The intellectual format of the archival materials.
 allOf:
-  - $ref: authorityReference
+  - $ref: authorityReference.yaml

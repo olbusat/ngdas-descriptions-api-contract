@@ -5,10 +5,10 @@ description: >-
   The name of an organization that is the subject of or highly relevant to the archival materials.
 type: object
 allOf:
-  - $ref: authorityReference
+  - $ref: authorityReference.yaml
 properties:
   abolishDate:
-    $ref: abolishDate
+    $ref: abolishDate.yaml
 
   establishDate:
-    $ref: establishDate
+    $ref: establishDate.yaml

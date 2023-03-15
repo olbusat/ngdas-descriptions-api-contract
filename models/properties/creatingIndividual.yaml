@@ -6,10 +6,10 @@ description: >-
   working (primary) use.
 type: object
 allOf:
-  - $ref: creator
+  - $ref: creator.yaml
 properties:
   birthDate:
-    $ref: birthDate
+    $ref: birthDate.yaml
 
   deathDate:
-    $ref: deathDate
+    $ref: deathDate.yaml

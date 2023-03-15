@@ -1,0 +1,16 @@
+description: Parent object encapsulating 'RecordGroup' and 'Collection' common properties
+type: object
+properties:
+  title:
+    $ref: properties/title.yaml
+  descriptionType:
+    $ref: properties/levelOfDescription.yaml
+  inclusiveStartDate:
+    $ref: properties/inclusiveStartDate.yaml
+  inclusiveEndDate:
+    $ref: properties/inclusiveEndDate.yaml      
+required:
+  - title
+  - inclusiveStartDate
+  - inclusiveEndDate
+  - descriptionType

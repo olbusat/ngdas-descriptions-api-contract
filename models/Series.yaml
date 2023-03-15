@@ -168,9 +168,6 @@ properties:
     items:
       $ref: properties/recordsCenterTransferNumber.yaml
 
-  recordType:
-    $ref: properties/recordType.yaml
-
   scaleNote:
     $ref: properties/scaleNote.yaml
 
@@ -212,6 +209,5 @@ required:
   - levelOfDescription
   - naId
   - physicalOccurrences
-  - recordType
   - title
   - useRestriction

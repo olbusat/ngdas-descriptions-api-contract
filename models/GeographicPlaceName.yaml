@@ -40,9 +40,6 @@ properties:
   recordSource:
     $ref: properties/recordSource.yaml
 
-  recordType:
-    $ref: properties/recordType.yaml
-
   scopeNote:
     $ref: properties/scopeNote.yaml
 

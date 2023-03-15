@@ -4,7 +4,7 @@ title: seriesPhysicalOccurrence
 description: Details about the physical occurrence of archival materials within a series.
 type: object
 allOf:
-  - $ref: physicalOccurrence
+  - $ref: physicalOccurrence.yaml
 properties:
   containerList:
     type: string
@@ -22,9 +22,9 @@ properties:
   holdingsMeasurements:
     type: array
     items:
-      $ref: holdingsMeasurement
+      $ref: holdingsMeasurement.yaml
 
   mediaOccurrences:
     type: array
     items:
-      $ref: mediaOccurrence
+      $ref: mediaOccurrence.yaml

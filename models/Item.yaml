@@ -23,6 +23,5 @@ required:
   - levelOfDescription
   - naId
   - physicalOccurrences
-  - recordType
   - title
   - useRestriction

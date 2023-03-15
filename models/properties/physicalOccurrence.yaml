@@ -38,4 +38,4 @@ properties:
   referenceUnits:
     type: array
     items:
-      $ref: referenceUnit
+      $ref: referenceUnit.yaml

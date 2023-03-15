@@ -4,10 +4,10 @@ title: personalReference
 description: The name of an individual who is the subject of or highly relevant to the archival materials.
 type: object
 allOf:
-  - $ref: authorityReference
+  - $ref: authorityReference.yaml
 properties:
   birthDate:
-    $ref: birthDate
+    $ref: birthDate.yaml
 
   deathDate:
-    $ref: deathDate
+    $ref: deathDate.yaml

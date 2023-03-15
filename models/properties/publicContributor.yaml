@@ -5,13 +5,13 @@ description: Information about the user who made the public contribution
 type: object
 properties:
   fullName:
-    $ref: publicContributorFullName
+    $ref: publicContributorFullName.yaml
 
   naraStaff:
-    $ref: publicContributorNaraStaff
+    $ref: publicContributorNaraStaff.yaml
 
   userId:
-    $ref: publicContributorUserId
+    $ref: publicContributorUserId.yaml
 
   userName:
-    $ref: publicContributorUserName
+    $ref: publicContributorUserName.yaml

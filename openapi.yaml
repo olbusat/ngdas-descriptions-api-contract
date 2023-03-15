@@ -16,8 +16,11 @@ servers:
     description: Staging server
   - url: https://dev.das.nara.gov/api/v2
     description: Dev server
-  - url: http://localhost:4010/
+  - url: http://localhost:4010
     description: Local Prism server
+tags:
+  - name: Descriptions
+    description: All operations that relate to DAS archival descriptions
 paths:
   /record-groups:
     get:
@@ -55,14 +58,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/PostRecordGroupsRequest'
-            examples:
-              twoRecordGroupsToCreate:
-                $ref: '#/components/examples/TwoRecordGroupsToCreate'
-              singleRecordGroupToCreate:
-                $ref: '#/components/examples/SingleRecordGroupToCreate'
-              singleRecordGroupMissingRequiredField:
-                $ref: '#/components/examples/SingleRecordGroupMissingRequiredField'
+              $ref: '#/components/requestBodies/PostRecordGroupsRequest'
       responses:
         '207':
           content:
@@ -151,10 +147,7 @@ paths:
       security: 
         - jwt: []
       requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/PostCollectionsRequest'
+        $ref: '#/components/requestBodies/PostCollectionsRequest'
       responses:
         '207':
           content:
@@ -207,14 +200,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/PostSeriesRequest'
-            examples:
-              twoRecordGroupsToCreate:
-                $ref: '#/components/examples/TwoRecordGroupsToCreate'
-              singleRecordGroupToCreate:
-                $ref: '#/components/examples/SingleRecordGroupToCreate'
-              singleRecordGroupMissingRequiredField:
-                $ref: '#/components/examples/SingleRecordGroupMissingRequiredField'
+              $ref: '#/components/requestBodies/PostSeriesRequest'
       responses:
         '207':
           content:
@@ -317,138 +303,48 @@ paths:
 
 
 components:
-  schemas:
+
+  requestBodies:
 
     PostRecordGroupsRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: models/RecordGroup.yaml
+          examples:
+            twoRecordGroupsToCreate:
+              $ref: '#/components/examples/TwoRecordGroupsToCreate'
+            singleRecordGroupToCreate:
+              $ref: '#/components/examples/SingleRecordGroupToCreate'
+            singleRecordGroupMissingRequiredField:
+              $ref: '#/components/examples/SingleRecordGroupMissingRequiredField'
       description: > 
         A list of Record Group archival descriptions.
-      type: array
-      items:
-        $ref: '#/components/schemas/RecordGroup'
-    
+
     PostCollectionsRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: models/Collection.yaml
       description: > 
         A list of Collection archival descriptions.
-      type: array
-      items:
-        $ref: '#/components/schemas/Collection'
 
     PostSeriesRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: models/Series.yaml
       description: > 
         A list of Series archival descriptions.
-      type: array
-      items:
-        $ref: '#/components/schemas/Series'
 
-
-    RecordGroupAndCollectionCommonProperties: 
-      description: Parent object encapsulating 'RecordGroup' and 'Collection' common properties
-      type: object
-      properties:
-        title:
-          description: > 
-            See <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#5">documentation</a>
-          type: string
-          example: "General Records of the Department of Commerce"
-          minLength: 20
-          maxLength: 700
-        descriptionType:
-          type: string
-          enum:
-            - recordGroup
-            - collection
-            - series
-            - fileUnit
-            - item
-            - audioVisualItem
-          description: >
-            The archival control group level (record group or collection) or hierarchical description level (series, file unit, or item) of <a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/descriptionlist.html">the archival materials</a>.
-        inclusiveStartDate:
-          type: string
-          pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
-          description: >
-            <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The beginning date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
-        inclusiveEndDate:
-          type: string
-          pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
-          description: >
-            <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The last date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.      
-      required:
-        - title
-        - inclusiveStartDate
-        - inclusiveEndDate
-        - descriptionType
-    
-    RecordGroup: 
-      description: Record Group archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#record">See mandatory properties list</a>
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/RecordGroupAndCollectionCommonProperties'
-        - type: object
-          properties:
-            recordGroupNumber:
-              type: number
-              minimum: 1
-              maximum: 1000
-              example: 42
-              description: >
-                The <a href="https://www.archives.gov/research/catalog/lcdrg/elements/recordgroup.html">unique number</a> assigned to a Record Group.
-      required:
-        - title
-        - recordGroupNumber
-        - inclusiveStartDate
-        - inclusiveEndDate
-        - descriptionType
-
-    StoredRecordGroup: 
-      description: Record Group archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#record">See mandatory properties list</a>
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/Naid'
-        - $ref: '#/components/schemas/RecordGroup'
-      required:
-        - naid
-        - title
-        - recordGroupNumber
-        - inclusiveStartDate
-        - inclusiveEndDate
-        - descriptionType    
-
-    Collection: 
-      description: Collection archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#record">See mandatory properties list</a>
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/RecordGroupAndCollectionCommonProperties'
-        - type: object
-          properties:
-            collectionIdentifier:
-              type: string
-              minLength: 1
-              maxLength: 10
-              example: JC-1132
-              description: >
-                The <a href="https://www.archives.gov/research/catalog/lcdrg/elements/collectionid.html">unique identifier</a> assigned to a Collection.
-      required:
-        - title
-        - collectionIdentifier
-        - inclusiveStartDate
-        - inclusiveEndDate
-        - descriptionType
-    
-    StoredCollection:
-      description: Collection archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#record">See mandatory properties list</a>
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/Naid'
-        - $ref: '#/components/schemas/Collection'
-      required:
-        - naid
-        - title
-        - collectionIdentifier
-        - inclusiveStartDate
-        - inclusiveEndDate
-        - descriptionType
-    
+  schemas:
+        
     SeriesFileUnitAndItemDescriptionCommonProperties: 
       description: Parent object encapsulating 'Series', 'FileUnit' and 'Item' common properties
       type: object

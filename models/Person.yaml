@@ -46,9 +46,6 @@ properties:
   recordSource:
     $ref: properties/recordSource.yaml
 
-  recordType:
-    $ref: properties/recordType.yaml
-
   role:
     $ref: properties/role.yaml
 

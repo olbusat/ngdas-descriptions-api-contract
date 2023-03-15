@@ -8,10 +8,10 @@ description: >-
 type: object
 properties:
   accessionNumber:
-    $ref: accessionNumber
+    $ref: accessionNumber.yaml
 
   accessRestriction:
-    $ref: accessRestriction
+    $ref: accessRestriction.yaml
 
   ancestors:
     description: >-
@@ -20,141 +20,138 @@ properties:
     type: array
     items:
       oneOf:
-        - $ref: ancestorRecordGroup
-        - $ref: ancestorCollection
-        - $ref: ancestorSeries
-        - $ref: ancestorFileUnit
+        - $ref: ancestorRecordGroup.yaml
+        - $ref: ancestorCollection.yaml
+        - $ref: ancestorSeries.yaml
+        - $ref: ancestorFileUnit.yaml
 
   audiovisual:
-    $ref: audiovisual
+    $ref: audiovisual.yaml
 
   beginCongress:
-    $ref: beginCongress
+    $ref: beginCongress.yaml
 
   contributors:
     type: array
     items:
       oneOf:
-        - $ref: organizationalContributor
-        - $ref: personalContributor
+        - $ref: organizationalContributor.yaml
+        - $ref: personalContributor.yaml
 
   copyrightDates:
     type: array
     items:
-      $ref: copyrightDate
+      $ref: copyrightDate.yaml
 
   coverageEndDate:
-    $ref: coverageEndDate
+    $ref: coverageEndDate.yaml
 
   coverageStartDate:
-    $ref: coverageStartDate
+    $ref: coverageStartDate.yaml
 
   custodialHistoryNote:
-    $ref: custodialHistoryNote
+    $ref: custodialHistoryNote.yaml
 
   dataControlGroup:
-    $ref: dataControlGroup
+    $ref: dataControlGroup.yaml
 
   dateNote:
-    $ref: dateNote
+    $ref: dateNote.yaml
 
   levelOfDescription:
-    $ref: levelOfDescription
+    $ref: levelOfDescription.yaml
 
   digitalObjects:
     type: array
     items:
-      $ref: digitalObject
+      $ref: digitalObject.yaml
 
   endCongress:
-    $ref: endCongress
+    $ref: endCongress.yaml
 
   generalNotes:
     type: array
     items:
-      $ref: generalNote
+      $ref: generalNote.yaml
 
   generalRecordsTypes:
     type: array
     items:
-      $ref: generalRecordType
+      $ref: generalRecordType.yaml
 
   internalTransferNumbers:
     type: array
     items:
-      $ref: internalTransferNumber
+      $ref: internalTransferNumber.yaml
 
   languages:
     type: array
     items:
-      $ref: language
+      $ref: language.yaml
 
   localIdentifier:
-    $ref: localIdentifier
+    $ref: localIdentifier.yaml
 
   microformPublications:
     type: array
     items:
-      $ref: microformPublication
+      $ref: microformPublication.yaml
 
   naId:
-    $ref: naId
+    $ref: naId.yaml
 
   onlineResources:
     type: array
     items:
-      $ref: onlineResource
+      $ref: onlineResource.yaml
 
   otherTitles:
     type: array
     items:
-      $ref: otherTitle
+      $ref: otherTitle.yaml
 
   partyDesignation:
-    $ref: partyDesignation
+    $ref: partyDesignation.yaml
 
   productionDates:
     type: array
     items:
-      $ref: productionDate
+      $ref: productionDate.yaml
 
   recordsCenterTransferNumbers:
     type: array
     items:
-      $ref: recordsCenterTransferNumber
-
-  recordType:
-    $ref: recordType
+      $ref: recordsCenterTransferNumber.yaml
 
   scaleNote:
-    $ref: scaleNote
+    $ref: scaleNote.yaml
 
   scopeAndContentNote:
-    $ref: scopeAndContentNote
+    $ref: scopeAndContentNote.yaml
 
   subjects:
     type: array
     items:
       oneOf:
-        - $ref: geographicReference
-        - $ref: organizationalReference
-        - $ref: personalReference
-        - $ref: specificRecordsTypeReference
-        - $ref: topicalSubjectReference
+        - $ref: geographicReference.yaml
+        - $ref: organizationalReference.yaml
+        - $ref: personalReference.yaml
+        - $ref: specificRecordsTypeReference.yaml
+        - $ref: topicalSubjectReference.yaml
 
   subtitle:
-    $ref: subtitle
+    $ref: subtitle.yaml
 
   title:
-    $ref: title
+    $ref: title.yaml
 
   transferNote:
-    $ref: transferNote
+    $ref: transferNote.yaml
 
   useRestriction:
-    $ref: useRestriction
+    $ref: useRestriction.yaml
 
   variantControlNumbers:
     type: array
     items:
-      $ref: variantControlNumber
+      $ref: variantControlNumber.yaml

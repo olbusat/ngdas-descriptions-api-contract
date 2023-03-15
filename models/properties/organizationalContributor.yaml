@@ -6,10 +6,10 @@ description: >-
   intellectual, technical, artistic, or financial production of the archival materials.
 type: object
 allOf:
-  - $ref: contributor
+  - $ref: contributor.yaml
 properties:
   abolishDate:
-    $ref: abolishDate
+    $ref: abolishDate.yaml
 
   establishDate:
-    $ref: establishDate
+    $ref: establishDate.yaml

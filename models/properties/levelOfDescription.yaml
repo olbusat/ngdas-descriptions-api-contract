@@ -6,8 +6,9 @@ description: >-
   level (series, file unit, or item) of the archival materials.
 type: string
 enum:
-  - Record Group
-  - Collection
-  - File Unit
-  - Series
-  - Item
+  - recordGroup
+  - collection
+  - series
+  - fileUnit
+  - item
+  - itemAV

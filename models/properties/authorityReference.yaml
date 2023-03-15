@@ -8,10 +8,10 @@ description: >-
 type: object
 properties:
   authorityType:
-    $ref: authorityType
+    $ref: authorityType.yaml
 
   heading:
-    $ref: heading
+    $ref: heading.yaml
 
   naId:
-    $ref: naId
+    $ref: naId.yaml
