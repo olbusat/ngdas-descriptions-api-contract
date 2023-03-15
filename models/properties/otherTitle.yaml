@@ -7,6 +7,4 @@ description: >-
   title, or an informal title. Variant titles include those that do not meet NARA
   standards for the formation of a title.
 type: string
-example:
-  - Index to Series Described in Entry 36
-  - French Revenge Around Verdun
+example: Index to Series Described in Entry 36

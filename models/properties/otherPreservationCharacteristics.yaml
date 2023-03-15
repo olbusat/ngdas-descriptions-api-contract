@@ -4,6 +4,4 @@ title: otherPreservationCharacteristics
 description: >-
   Additional information about the physical nature of the archival materials needed for preservation purposes.
 type: string
-example:
-  - 'Artifacts: Copper alloy'
-  - Fastners/records adhered together
+example: Fastners/records adhered together

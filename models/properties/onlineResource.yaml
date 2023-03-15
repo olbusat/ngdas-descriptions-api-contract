@@ -12,24 +12,18 @@ properties:
   description:
     type: string
     description: Textual description of the type of online resource.
-    example:
-      - Access to Archival Databases (AAD) system
-      - Filing Manual
+    example: Access to Archival Databases (AAD) system
 
   note:
     type: string
     description: >-
       Explanations or significant information regarding an Online Resource in
       relation to the archival materials being described.
-    example:
-      - >-
-        The electronic records in some of the files in this series can be
-        searched online via the Access to Archival Databases (AAD) system.
-      - Order Online! can be used to order copies of these records.
+    example: >-
+      The electronic records in some of the files in this series can be
+      searched online via the Access to Archival Databases (AAD) system.
 
   url:
     type: string
     description: The URL associated with an Online Resource.
-    example:
-      - http://www.archives.gov/research/order/orderonline.html
-      - http://www.maritime.org/navyfile/index.htm
+    example: http://www.archives.gov/research/order/orderonline.html

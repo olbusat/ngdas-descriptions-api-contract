@@ -3,9 +3,8 @@
 title: numberingNote
 description: The explanation of an agency or NARA-assigned numbering scheme.
 type: string
-example:
-  - >-
-    Requests for case files in this series must include the final certificate
-    number, which is often found in tract books or on patent documents. When
-    requesting canceled or relinquished case files under the Homestead Act and
-    Timber Culture Acts, include the application number.
+example: >-
+  Requests for case files in this series must include the final certificate
+  number, which is often found in tract books or on patent documents. When
+  requesting canceled or relinquished case files under the Homestead Act and
+  Timber Culture Acts, include the application number.

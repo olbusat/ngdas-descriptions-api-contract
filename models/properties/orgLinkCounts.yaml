@@ -8,34 +8,24 @@ properties:
   contributor:
     description: Total number of times this organization acts as a contributor to archival materials.
     type: integer
-    example:
-      - 0
-      - 1
+    example: 1
 
   creator:
     description: Total number of times this organiation acts as a creator for archival materials.
     type: integer
-    example:
-      - 10
-      - 15
+    example: 10
 
   donor:
     description: Total number of times this object acts as a donor for archival material.
     type: integer
-    example:
-      - 10
-      - 13
+    example: 10
 
   subject:
     description: Total number of times this organization acts as a subject to archival materials.
     type: integer
-    example:
-      - 3
-      - 349
+    example: 349
 
   totalDescription:
     description: Total number of times this organization is referred to in an approved archival description.
     type: integer
-    example:
-      - 101
-      - 324
+    example: 101

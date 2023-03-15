@@ -1,22 +1,23 @@
-- naid: 63542091
-  collectionIdentifier: "BHO-AC"
-  title: "Barack Obama Artifact Collection"
-  inclusiveStartDate:
-    day: 0
-    logicalDate": "2009-01-20"
-    month: 0
-    qualifier: "string"
-    year": 0
-  inclusiveEndDate: 
-    day: 0
-    logicalDate": "2017-01-20"
-    month: 0
-    qualifier: "string"
-    year": 0
-  descriptionType: "collection"
-- naid: 596989
-  collectionIdentifier: "RN-VP"
-  title: "Pre-Presidential Papers of Richard M. Nixon"
-  inclusiveStartDate: "01/01/1946"
-  inclusiveEndDate: "12/31/1963"
-  descriptionType: "collection"
+value:
+  - naid: 63542091
+    collectionIdentifier: "BHO-AC"
+    title: "Barack Obama Artifact Collection"
+    inclusiveStartDate:
+      day: 0
+      logicalDate": "2009-01-20"
+      month: 0
+      qualifier: "string"
+      year": 0
+    inclusiveEndDate: 
+      day: 0
+      logicalDate": "2017-01-20"
+      month: 0
+      qualifier: "string"
+      year": 0
+    descriptionType: "collection"
+  - naid: 596989
+    collectionIdentifier: "RN-VP"
+    title: "Pre-Presidential Papers of Richard M. Nixon"
+    inclusiveStartDate: "01/01/1946"
+    inclusiveEndDate: "12/31/1963"
+    descriptionType: "collection"

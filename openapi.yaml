@@ -194,10 +194,7 @@ paths:
       security: 
         - jwt: []
       requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/requestBodies/PostSeriesRequest'
+        $ref: '#/components/requestBodies/PostSeriesRequest'
       responses:
         '207':
           content:

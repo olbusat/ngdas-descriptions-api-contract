@@ -3,6 +3,4 @@
 title: objectId
 description: The identifier given to a digital object.
 type: string
-example:
-  - 'Report XR657, Page 1'
-  - 'Map N67, Sht. 36'
+example: 'Report XR657, Page 1'

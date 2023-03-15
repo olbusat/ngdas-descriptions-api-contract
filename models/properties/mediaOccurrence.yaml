@@ -10,31 +10,23 @@ properties:
     type: string
     description: >-
       The absence or presence of colors, besides black, white and gray, of the specific media type.
-    example:
-      - Color
-      - Black-and-White
+    example: Black-and-White
 
   containerId:
     type: string
     description: >-
       The identifier or number for the individual container storing each specific media type.
-    example:
-      - Box 6829
-      - '27'
+    example: Box 6829
 
   depth:
     type: number
     description: The distance measured from front to back of a specific media type.
-    example:
-      - 6.75
-      - 10
+    example: 6.75
 
   dimension:
     type: string
     description: The standard size of the physical items of a specific media type.
-    example:
-      - 3x5 inch
-      - Varied
+    example: 3x5 inch
 
   generalMediaTypes:
     type: array
@@ -44,70 +36,52 @@ properties:
   height:
     type: number
     description: The distance measured from top to bottom of the specific media type.
-    example:
-      - 11.75
-      - 3.5
+    example: 11.75
 
   mediaOccurrenceNote:
     type: string
     description: >-
       Explanations or significant information relating to the media occurrence of the archival materials.
-    example:
-      - This reel contains music and sound effects.
-      - These images were made by the albumen and collodion processes.
+    example: This reel contains music and sound effects.
 
   physicalRestrictionNote:
     type: string
     description: >-
       Information regarding any physical restrictions that apply to the particular specific media
       type of the archival materials. Physical restrictions are primarily preservation restrictions.
-    example:
-      - Because these records are stored offsite, researchers must request the records 48 hours in advance.
-      - This film reel has shrunk and may not be viewed.
+    example: Because these records are stored offsite, researchers must request the records 48 hours in advance.
 
   pieceCount:
     type: integer
     description: >-
       The exact number of physical items comprising the specific media type of the archival materials.
-    example:
-      - 3
-      - 10
+    example: 3
 
   process:
     type: string
     description: The technical or manual means by which the specific media type was created.
-    example:
-      - 'Artwork: Chalk'
-      - Photocopy
+    example: Photocopy
 
   reproductionCount:
     type: integer
     description: >-
       The exact number of parts or sides of the physical items needed to create a complete
       duplicate of the specific media type of the archival materials.
-    example:
-      - 6
-      - 49
+    example: 49
 
   specificMediaType:
     type: string
     description: The physical form of the archival materials.
-    example:
-      - Digital Audio Tape
-      - Film Reel
+    example: Digital Audio Tape
 
   technicalAccessRequirementsNote:
     type: string
     description: >-
       A description of the equipment needed to view the specific media type, such as a light
       table to view aerial film, or hardware and software to view archival materials on electronic media.
-    example:
-      - An open reel computer tape drive is required.
-      - A light table is needed to view these aerial photographs.
+    example: An open reel computer tape drive is required.
 
   width:
     type: number
     description: The horizontal distance measured from side to side of a specific media type.
-    example:
-      - 6.25
-      - 4.5
+    example: 6.25

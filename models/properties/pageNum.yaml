@@ -4,6 +4,4 @@ title: pageNum
 description: >-
   The page number of a digital object that is the target of a contribution, if applicable.
 type: integer
-example:
-  - 100
-  - 2
+example: 100
