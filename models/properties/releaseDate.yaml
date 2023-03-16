@@ -1,6 +1,4 @@
-
-
 title: releaseDate
 description: The date on which the audiovisual item was released for distribution.
 allOf:
-  - $ref: qualifiableDate
+  - $ref: qualifiableDate.yaml

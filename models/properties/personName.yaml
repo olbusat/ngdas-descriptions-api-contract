@@ -1,9 +1,4 @@
-
-
 title: personName
 description: The authorized name of person.
 type: string
-example:
-  - Dulles, John Foster
-  - Elizabeth, Queen, consort of George VI, King of Great Britain
-  - Kennedy, John F.
+example: Dulles, John Foster

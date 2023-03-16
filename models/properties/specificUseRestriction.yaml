@@ -1,10 +1,6 @@
-
-
 title: specificUseRestriction
 description: >-
   The identification of the type of use restrictions, based on copyright, 
   donor, or statutory provisions, on the archival materials.
 type: string
-example:
-  - Copyright
-  - Donor Restrictions
+example: Donor Restrictions

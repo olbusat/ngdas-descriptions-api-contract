@@ -1,8 +1,4 @@
-
-
 title: publicContributorUserId
 description: Unique identifier of a user who made the public contribution.
 type: integer
-example:
-  - 56897
-  - 91991
+example: 56897

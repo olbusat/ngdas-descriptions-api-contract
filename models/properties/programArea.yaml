@@ -1,8 +1,4 @@
-
-
 title: programArea
 description: The function or program area of the organization.
 type: string
-example:
-  - Agriculture
-  - Livestock
+example: Livestock

@@ -1,9 +1,5 @@
-
-
 title: updatedAt
 description: Date and time the public contribution was updated.
 type: string
 format: date-time
-example:
-  - 2018-11-13 20:20:39
-  - 2020-01-29 08:11:00
+example: 018-11-13 20:20:39

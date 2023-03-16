@@ -1,6 +1,4 @@
-
-
 title: productionDate
 description: The date on which the item was first produced or created.
 allOf:
-  - $ref: qualifiableDate
+  - $ref: qualifiableDate.yaml

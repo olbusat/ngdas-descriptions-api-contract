@@ -1,8 +1,4 @@
-
-
 title: recordSource
 description: External authority source that provided the authority record.
 type: string
-example:
-  - Getty Art and Architecture Thesaurus
-  - Library of Congress Name Authority File
+example: Library of Congress Name Authority File

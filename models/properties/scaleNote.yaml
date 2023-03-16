@@ -1,11 +1,7 @@
-
-
 title: scaleNote
 description: >-
   The level of detail in cartographic or architectural documents expressed as a 
   numerical ratio to one, which may have been computed from the verbal or bar
   scales included on the materials.
 type: string
-example:
-  - 1 inch to approximately 90 miles.
-  - The charts are drawn at the 1:250,000 scale (one inch equals 3.43 nautical miles).
+example: The charts are drawn at the 1:250,000 scale (one inch equals 3.43 nautical miles).

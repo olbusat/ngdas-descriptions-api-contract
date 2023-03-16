@@ -1,12 +1,7 @@
-
-
 title: personalTitle
 description: >-
   Titles and other words associated with a person's name, including titles designating rank,
   office, or nobility; terms of address (Mr., Mrs.); initials for an academic degree (MBA, Dr),
   a roman numeral used with a surname; or other phrases associated with a name (Saint, Statesman).
 type: string
-example:
-  - Chief
-  - Jr.
-  - Queen of Great Britain
+example: Jr.

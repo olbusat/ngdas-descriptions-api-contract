@@ -1,11 +1,7 @@
-
-
 title: recordsCenterTransferNumber
 description: >-
   The unique identifier assigned to a group of records that has been transferred
   into the physical custody of a records center. Formerly this was commonly known
   as the Records Center Accession Number
 type: string
-example:
-  - 490-88-0066A
-  - 021-53T-0007P
+example: 490-88-0066A

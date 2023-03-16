@@ -1,8 +1,4 @@
-
-
 title: publicContributorFullName
 description: Display name of user who made the public contribution.
 type: string
-example:
-  - 'John Q Public'
-  - 'Jane Doe'
+example: Jane Doe

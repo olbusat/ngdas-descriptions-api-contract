@@ -1,5 +1,3 @@
-
-
 title: useRestriction
 description: Provides information and status about restrictions on use of archival materials.
 type: object
@@ -8,9 +6,7 @@ properties:
     type: string
     description: >-
       Significant information pertaining to the use or reproduction of the archival materials.
-    example:
-      - Copyright held by RKO General Inc.
-      - >-
+    example: >-
         Some or all of the images in this series may be subject to copyright or other 
         intellectual property restrictions.
 
@@ -23,6 +19,4 @@ properties:
     type: string
     description: >-
       Indication of whether or not there are use restrictions on the archival materials.
-    example:
-      - Restricted - Fully
-      - Unrestricted
+    example: Restricted - Fully

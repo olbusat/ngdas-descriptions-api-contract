@@ -1,5 +1,3 @@
-
-
 title: specificAccessRestriction
 description: >-
   Specific access restrictions to the archival materials, based on national security
@@ -10,16 +8,11 @@ properties:
   restriction:
     type: string
     description: The specific reason for access restriction.
-    example:
-      - Donor Restricted
-      - FOIA (b)(1) National Security
-      - Presidential Records Act (p)(1) National Security Classified
+    example: Presidential Records Act (p)(1) National Security Classified
 
   securityClassification:
     type: string
     description: >-
       The highest level of national security protections or classified nuclear 
       information protections on the archival materials.
-    example:
-      - Secret
-      - Top Secret
+    example: Top Secret

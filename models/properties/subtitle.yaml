@@ -1,10 +1,6 @@
-
-
 title: subtitle
 description: >-
   The secondary name in the formal title of the item, usually indicated by punctuation
   such as a colon or brackets.
 type: string
-example:
-  - The Final Months
-  - Rev. Martin Luther King, Jr., 1929-1968
+example: Rev. Martin Luther King, Jr., 1929-1968

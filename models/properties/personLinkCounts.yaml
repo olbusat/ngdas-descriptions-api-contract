@@ -1,5 +1,3 @@
-
-
 title: personLinkCounts
 description: Tracks the number and manner of the relationships to a person authority record.
 type: object
@@ -7,41 +5,35 @@ properties:
   contributor:
     description: Total number of times this person acts as a contributor to archival materials.
     type: integer
-    example:
-      - 0
-      - 1
+    format: int32
+    example: 1
 
   creator:
     description: Total number of times this person acts as a creator for archival materials.
     type: integer
-    example:
-      - 10
-      - 15
+    format: int32
+    example: 10
 
   donor:
     description: Total number of times this person acts as a donor of archival materials.
     type: integer
-    example:
-      - 10
-      - 13
+    format: int32
+    example: 10
 
   organization:
     description: Total number of times this object is referred to in an organization authority.
     type: integer
-    example:
-      - 10
-      - 11
+    format: int32
+    example: 10
 
   subject:
     description: Total number of times this person acts as the subject of archival materials.
     type: integer
-    example:
-      - 3
-      - 349
+    format: int32
+    example: 3
 
   totalDescription:
     description: Total number of times this person is referred to, in any way, in archival materials.
     type: integer
-    example:
-      - 101
-      - 324
+    format: int32
+    example: 101

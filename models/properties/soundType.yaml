@@ -1,10 +1,6 @@
-
-
 title: soundType
 description: >-
   The identification of the sound characteristics (absence or presence of sound)
   of audiovisual materials.
 type: string
-example:
-  - Silent
-  - Sound and Silent
+example: Sound and Silent

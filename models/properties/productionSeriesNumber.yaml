@@ -1,5 +1,3 @@
-
-
 title: productionSeriesNumber
 description: >-
   The alphabetic or numeric identifier for a part or section of a production series. Parts or 
@@ -7,7 +5,4 @@ description: >-
   "series" is used in a non-archival sense.  It specifically refers to motion pictures or
   videotapes produced as a series, such as a television series or movie serials.
 type: string
-example:
-  - Episode #101
-  - No. 2
-  - Series 1
+example: Episode #101

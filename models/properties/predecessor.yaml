@@ -1,10 +1,8 @@
-
-
 title: predecessor
 description: The name and identifier of the immediate predecessor organization.
 type: object
 properties:
   naId:
-    $ref: naId
+    $ref: naId.yaml
   name:
-    $ref: name
+    $ref: name.yaml

@@ -1,8 +1,4 @@
-
-
 title: sourceNote
 description: Resources cited to develop and support headings and references in an authority record.
 type: string
-example:
-  - LC authorities online, Jan. 11, 2011
-  - Encyclopedia Britannica Online (1997-2002)
+example: Encyclopedia Britannica Online (1997-2002)

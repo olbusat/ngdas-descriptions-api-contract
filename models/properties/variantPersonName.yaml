@@ -1,5 +1,3 @@
-
-
 title: variantPersonName
 description: >-
   Additional or variant names commonly used for the person, including nicknames, 
@@ -7,22 +5,22 @@ description: >-
 type: object
 properties:
   birthDate:
-    $ref: birthDate
+    $ref: birthDate.yaml
 
   deathDate:
-    $ref: deathDate
+    $ref: deathDate.yaml
 
   fullerFormOfName:
-    $ref: fullerFormOfName
+    $ref: fullerFormOfName.yaml
 
   heading:
-    $ref: heading
+    $ref: heading.yaml
 
   name:
-    $ref: personName
+    $ref: personName.yaml
 
   numerator:
-    $ref: numerator
+    $ref: numerator.yaml
 
   personalTitle:
-    $ref: personalTitle
+    $ref: personalTitle.yaml

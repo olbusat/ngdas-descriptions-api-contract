@@ -1,5 +1,3 @@
-
-
 title: variantControlNumber
 description: >-
   The control number or identifier given to the archival materials either by
@@ -9,19 +7,16 @@ properties:
   note:
     type: string
     description: The explanation of the variant control number and variant control type.
-    example:
-      - Entry 194 is the entry number for this series found in Preliminary Inventory of the Cartographic Records of the American Expeditionary Forces, 1917-21 (Record Group 120) (PI 165)
+    example: >- 
+      Entry 194 is the entry number for this series found in Preliminary Inventory 
+      of the Cartographic Records of the American Expeditionary Forces, 1917-21 (Record Group 120) (PI 165)
 
   number:
     type: string
     description: The actual control number or identifier given to the archival materials.
-    example:
-      - MS 74-1094
-      - PI66 181
+    example: PI66 181
 
   type:
     type: string
     description: The type of variant control number or identifier.
-    example:
-      - Master Location Register Number
-      - NUCMC Number
+    example: Master Location Register Number

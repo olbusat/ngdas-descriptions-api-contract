@@ -1,11 +1,6 @@
-
-
 title: variantOrganizationName
 description: >-
   Familiar or commonly used designations for an organization that varies from the 
   organization's official name.
 type: string
-example:
-  - Fannie Mae.
-  - FBI
-  - 1st Army.
+example: Fannie Mae.

@@ -1,5 +1,3 @@
-
-
 title: objectId
 description: The identifier given to a digital object.
 type: string

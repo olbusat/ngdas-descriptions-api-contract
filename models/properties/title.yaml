@@ -1,5 +1,3 @@
-
-
 title: title
 description: >
   The name assigned to the record group, collection, or archival materials.
@@ -7,9 +5,4 @@ description: >
 type: string
 minLength: 10
 maxLength: 700
-example:
-  - Inflation Sourcebook [1]
-  - Lou Henry Hoover Papers
-  - Manual for Army Cooks
-  - Records of the Office of the Pardon Attorney
-  - Records of the War Labor Policies Board
+example: Records of the War Labor Policies Board

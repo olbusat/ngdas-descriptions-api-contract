@@ -1,12 +1,9 @@
-
-
 title: scopeAndContentNote
 description: >-
   The description of the breadth and depth of the record group, collection, or archival materials.
 type: string
-example:
-  - >-
-    This collection of donated historical materials consists of files maintained by
-    Gerald M. Rafshoon's Atlanta-based advertising agency. The materials relate to the
-    agency's work advising Jimmy Carter in his successful 1970 gubernatorial campaign,
-    as well as his 1976 presidential campaign and his 1980 bid for re-election.
+example: >-
+  This collection of donated historical materials consists of files maintained by
+  Gerald M. Rafshoon's Atlanta-based advertising agency. The materials relate to the
+  agency's work advising Jimmy Carter in his successful 1970 gubernatorial campaign,
+  as well as his 1976 presidential campaign and his 1980 bid for re-election.

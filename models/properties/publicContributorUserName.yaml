@@ -1,8 +1,4 @@
-
-
 title: publicContributorUserName
 description: publicContributorUserName model description
 type: string
-example:
-  - 'historybuff123'
-  - 'johndoe1776'
+example: historybuff123

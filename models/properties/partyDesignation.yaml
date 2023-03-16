@@ -1,9 +1,4 @@
-
-
 title: partyDesignation
 description: Specifies the an association of a archival record with a political party
 type: string
-example:
-  - Democrat
-  - Non-designated
-  - Republican
+example: Democrat

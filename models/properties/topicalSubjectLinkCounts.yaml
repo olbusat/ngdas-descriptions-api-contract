@@ -1,5 +1,3 @@
-
-
 title: topicalSubjectLinkCounts
 description: Tracks the number and manner of the relationships to a topical subject authority record.
 type: object
@@ -7,20 +5,17 @@ properties:
   subject:
     description: Total number of times this topical subject acts as the subject of archival materials.
     type: integer
-    example:
-      - 77
-      - 910
+    format: int32
+    example: 64
 
   topicalSubject:
     description: Total number of times this topical subject is referred to in another topical subject.
     type: integer
-    example:
-      - 3
-      - 349
+    format: int32
+    example: 3
 
   totalDescription:
     description: Total number of times this topical subject is referred to, in any way, in archival materials.
     type: integer
-    example:
-      - 101
-      - 324
+    format: int32
+    example: 324

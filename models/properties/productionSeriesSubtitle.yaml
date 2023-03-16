@@ -1,5 +1,3 @@
-
-
 title: productionSeriesSubtitle
 description: >-
   The title of a part or section of a production series.  Parts or sections refer to segments,
@@ -7,6 +5,4 @@ description: >-
   sense. It specifically refers to motion pictures, sound recordings, or videotapes produced as a
   series, such as a television series or movie serials.
 type: string
-example:
-  - Physics
-  - America's Civil Rights Years (1954-1965)
+example: America's Civil Rights Years (1954-1965)

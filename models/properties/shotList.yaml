@@ -1,11 +1,8 @@
-
-
 title: shotList
 description: A shot-by-shot description of a film or video.
 type: string
-example:
-  - >-
-    1) GV Wave of LCMs underway, Corregidor under bombardment BG-SV.2) GV Paratrooper descends
-    to Corregidor, many parachutes lay on ground.3) MS Plane passes paratroopers descend to Corregidor
-    (good).4) MS Planes pass over island & drop paratroopers, paratroopers descend, many parachutes lay
-    on island BG-SV.QUALITY: GENERALLY VERY GOOD.
+example: >-
+  1) GV Wave of LCMs underway, Corregidor under bombardment BG-SV.2) GV Paratrooper descends
+  to Corregidor, many parachutes lay on ground.3) MS Plane passes paratroopers descend to Corregidor
+  (good).4) MS Planes pass over island & drop paratroopers, paratroopers descend, many parachutes lay
+  on island BG-SV.QUALITY: GENERALLY VERY GOOD.

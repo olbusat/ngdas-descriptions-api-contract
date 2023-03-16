@@ -1,11 +1,7 @@
-
-
 title: recordGroupNumber
 description: > 
   The <a href="https://www.archives.gov/research/catalog/lcdrg/elements/recordgroup.html">unique number</a> assigned to a Record Group.
 type: integer
 minimum: 1
 maximum: 1000
-example:
-  - 5
-  - 59
+example: 5

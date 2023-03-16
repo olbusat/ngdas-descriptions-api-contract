@@ -1,12 +1,10 @@
-
-
 title: relatedTerm
 description: >-
   An authorized, preferred heading that is related in definition and scope but is not broader or narrower.
 type: object
 properties:
   naId:
-    $ref: naId
+    $ref: naId.yaml
 
   heading:
-    $ref: heading
+    $ref: heading.yaml
