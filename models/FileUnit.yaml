@@ -29,6 +29,8 @@ properties:
         - $ref: properties/ancestorRecordGroup.yaml
         - $ref: properties/ancestorCollection.yaml
         - $ref: properties/ancestorSeries.yaml
+      discriminator:
+        propertyName: descriptionType
 
   arrangement:
     $ref: properties/arrangement.yaml
@@ -45,6 +47,8 @@ properties:
       oneOf:
         - $ref: properties/organizationalContributor.yaml
         - $ref: properties/personalContributor.yaml
+      discriminator:
+        propertyName: authorityType
 
   coverageEndDate:
     $ref: properties/coverageEndDate.yaml
@@ -148,11 +152,10 @@ properties:
     type: array
     items:
       oneOf:
-        - $ref: properties/geographicReference.yaml
         - $ref: properties/organizationalReference.yaml
         - $ref: properties/personalReference.yaml
-        - $ref: properties/specificRecordsTypeReference.yaml
-        - $ref: properties/topicalSubjectReference.yaml
+      discriminator:
+        propertyName: authorityType
 
   title:
     $ref: properties/title.yaml
@@ -170,8 +173,8 @@ properties:
 
 required:
   - accessRestriction
-  - ancestor
-  - creators
+  - ancestors
+  - contributors
   - generalRecordTypes
   - descriptionType
   - naId

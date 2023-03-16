@@ -41,8 +41,8 @@ properties:
 
 required:
   - accessRestriction
-  - ancestor
-  - creators
+  - ancestors
+  - contributors
   - generalRecordTypes
   - descriptionType
   - naId

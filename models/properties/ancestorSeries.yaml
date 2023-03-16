@@ -3,12 +3,12 @@ description: >-
   Identifiable and pertinent information that represents a series that is a parent
   or more distant ancestor of another archival description.
 type: object
-properties:
-  allOf:
-    $ref: ancestorDescription.yaml
-
+allOf:
+  - $ref: ancestorDescription.yaml
+properties: 
   creators:
     type: array
+    minItems: 1
     items:
       oneOf:
         - $ref: creatingIndividual.yaml
@@ -17,3 +17,4 @@ properties:
         propertyName: authorityType
 required:
   - descriptionType
+  - creators

@@ -23,7 +23,9 @@ properties:
         - $ref: ancestorRecordGroup.yaml
         - $ref: ancestorCollection.yaml
         - $ref: ancestorSeries.yaml
-        - $ref: ancestorFileUnit.yaml
+        # - $ref: ancestorFileUnit.yaml TODO what mandatory Item properties are need to be modeled so that this type is `unique`?
+      discriminator:
+        propertyName: descriptionType
 
   audiovisual:
     $ref: audiovisual.yaml
