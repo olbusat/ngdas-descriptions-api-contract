@@ -126,7 +126,7 @@ properties:
     items:
       $ref: properties/language.yaml
 
-  levelOfDescription:
+  descriptionType:
     $ref: properties/levelOfDescription.yaml
 
   localIdentifier:
@@ -204,7 +204,7 @@ required:
   - ancestors
   - creators
   - generalRecordTypes
-  - levelOfDescription
+  - descriptionType
   - naId
   - physicalOccurrences
   - title

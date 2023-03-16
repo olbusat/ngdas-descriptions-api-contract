@@ -11,7 +11,7 @@ properties:
   inclusiveStartDate:
     $ref: inclusiveStartDate.yaml
 
-  levelOfDescription:
+  descriptionType:
     $ref: levelOfDescription.yaml
 
   naId:

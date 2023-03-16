@@ -10,3 +10,5 @@ properties:
 
   deathDate:
     $ref: deathDate.yaml
+required:
+  - authorityType

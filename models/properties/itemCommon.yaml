@@ -58,7 +58,7 @@ properties:
   dateNote:
     $ref: dateNote.yaml
 
-  levelOfDescription:
+  descriptionType:
     $ref: levelOfDescription.yaml
 
   digitalObjects:

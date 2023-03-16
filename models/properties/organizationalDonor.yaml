@@ -12,3 +12,8 @@ properties:
 
   establishDate:
     $ref: establishDate.yaml
+required:
+  - authorityType
+  - heading
+  - naId
+  - establishDate

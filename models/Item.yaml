@@ -1,5 +1,3 @@
-
-
 title: Item
 description: >-
   The smallest indivisible archival unit (e.g. a letter, memorandum, report, leaflet, or
@@ -8,19 +6,19 @@ description: >-
   Not used to describe motion picture films, sound recordings or video recordings.
 type: object
 allOf:
-  - $ref: properties/itemCommon
+  - $ref: properties/itemCommon.yaml
 properties:
   physicalOccurrences:
     type: array
     items:
-      $ref: properties/itemPhysicalOccurrence
+      $ref: properties/itemPhysicalOccurrence.yaml
 
 required:
   - accessRestriction
   - ancestor
   - creators
   - generalRecordTypes
-  - levelOfDescription
+  - descriptionType
   - naId
   - physicalOccurrences
   - title

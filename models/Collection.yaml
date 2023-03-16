@@ -32,6 +32,8 @@ properties:
       oneOf:
         - $ref: properties/organizationalDonor.yaml
         - $ref: properties/personalDonor.yaml
+      discriminator:
+        propertyName: authorityType
 
   findingAids:
     type: array
@@ -40,6 +42,9 @@ properties:
 
   formerlyContained:
     $ref: properties/formerlyContained.yaml
+
+  descriptionType:
+    $ref: properties/levelOfDescription.yaml
 
   inclusiveEndDate:
     $ref: properties/inclusiveEndDate.yaml
@@ -70,5 +75,5 @@ required:
   - collectionIdentifier
   - inclusiveEndDate
   - inclusiveStartDate
-  - levelOfDescription
+  - descriptionType
   - title

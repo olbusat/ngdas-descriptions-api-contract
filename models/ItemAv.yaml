@@ -44,7 +44,7 @@ required:
   - ancestor
   - creators
   - generalRecordTypes
-  - levelOfDescription
+  - descriptionType
   - naId
   - physicalOccurrences
   - title
