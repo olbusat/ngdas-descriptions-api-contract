@@ -1,5 +1,3 @@
-
-
 title: itemCommon
 description: >-
   The smallest indivisible archival unit (e.g. a letter, memorandum, report, leaflet, or photograph).
@@ -76,7 +74,7 @@ properties:
     items:
       $ref: generalNote.yaml
 
-  generalRecordsTypes:
+  generalRecordTypes:
     type: array
     items:
       $ref: generalRecordType.yaml
@@ -135,11 +133,10 @@ properties:
     type: array
     items:
       oneOf:
-        - $ref: geographicReference.yaml
         - $ref: organizationalReference.yaml
         - $ref: personalReference.yaml
-        - $ref: specificRecordsTypeReference.yaml
-        - $ref: topicalSubjectReference.yaml
+      discriminator:
+        propertyName: authorityType
 
   subtitle:
     $ref: subtitle.yaml
