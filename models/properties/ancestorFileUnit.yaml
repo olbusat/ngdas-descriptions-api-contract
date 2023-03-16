@@ -6,3 +6,5 @@ type: object
 properties:
   allOf:
     $ref: ancestorDescription.yaml
+required:
+  - descriptionType

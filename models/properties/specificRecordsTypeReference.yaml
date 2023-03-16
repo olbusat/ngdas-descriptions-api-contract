@@ -2,3 +2,5 @@ title: specificRecordsTypeReference
 description: The intellectual format of the archival materials.
 allOf:
   - $ref: authorityReference.yaml
+required:
+  - authorityType

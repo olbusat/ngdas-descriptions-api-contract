@@ -2,9 +2,9 @@ title: fileUnitPhysicalOccurrence
 description: Details about the physical occurrence of archival materials within a file unit.
 type: object
 allOf:
-  - $ref: physicalOccurrence
+  - $ref: physicalOccurrence.yaml
 properties:
   mediaOccurrences:
     type: array
     items:
-      $ref: mediaOccurrence
+      $ref: mediaOccurrence.yaml

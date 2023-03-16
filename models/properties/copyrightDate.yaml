@@ -3,4 +3,4 @@ description: >-
   The date on which the item was copyrighted. (A copyright date does not mean an item is 
   still copyrighted.)
 allOf:
-  - $ref: qualifiableDate
+  - $ref: qualifiableDate.yaml

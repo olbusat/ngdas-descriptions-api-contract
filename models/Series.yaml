@@ -23,6 +23,8 @@ properties:
       oneOf:
         - $ref: properties/ancestorRecordGroup.yaml
         - $ref: properties/ancestorCollection.yaml
+      discriminator:
+        propertyName: descriptionType
 
   arrangement:
     $ref: properties/arrangement.yaml
@@ -39,6 +41,8 @@ properties:
       oneOf:
         - $ref: properties/organizationalContributor.yaml
         - $ref: properties/personalContributor.yaml
+      discriminator:
+        propertyName: authorityType
 
   coverageEndDate:
     $ref: properties/coverageEndDate.yaml
@@ -52,6 +56,8 @@ properties:
       oneOf:
         - $ref: properties/creatingIndividual.yaml
         - $ref: properties/creatingOrganization.yaml
+      discriminator:
+        propertyName: authorityType
 
   custodialHistoryNote:
     $ref: properties/custodialHistoryNote.yaml
@@ -93,6 +99,8 @@ properties:
       oneOf:
         - $ref: properties/ancestorRecordGroup.yaml
         - $ref: properties/ancestorCollection.yaml
+      discriminator:
+        propertyName: descriptionType
 
   functionAndUse:
     $ref: properties/functionAndUse.yaml
@@ -179,11 +187,10 @@ properties:
     type: array
     items:
       oneOf:
-        - $ref: properties/geographicReference.yaml
         - $ref: properties/organizationalReference.yaml
         - $ref: properties/personalReference.yaml
-        - $ref: properties/specificRecordsTypeReference.yaml
-        - $ref: properties/topicalSubjectReference.yaml
+      discriminator:
+        propertyName: authorityType
 
   title:
     $ref: properties/title.yaml
@@ -206,6 +213,5 @@ required:
   - generalRecordTypes
   - descriptionType
   - naId
-  - physicalOccurrences
   - title
   - useRestriction

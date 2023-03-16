@@ -1,12 +1,10 @@
-
-
 title: itemPhysicalOccurrence
 description: itemPhysicalOccurrence model description
 type: object
 allOf:
-  - $ref: physicalOccurrence
+  - $ref: physicalOccurrence.yaml
 properties:
   mediaOccurrences:
     type: array
     items:
-      $ref: itemMediaOccurrence
+      $ref: itemMediaOccurrence.yaml

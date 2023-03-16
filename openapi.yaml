@@ -212,17 +212,87 @@ paths:
                   $ref: '#/components/examples/SingleRecordGroupRejected'
           description: >-
             Multi-status response with the list of statuses for each requested entity.
-        '400':
+        '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/responses/Problem'
           description: >
-            Error response for cases when the backend rejects the attempt to add a new visit intention.
+            Error response for cases when the backend rejects the payload.
       operationId: createSeries
       tags:
         - Descriptions
   
+  /file-units:
+    post:
+      description: Creates several File Unit descriptions
+      security: 
+        - jwt: []
+      requestBody:
+        $ref: '#/components/requestBodies/PostFileUnitsRequest'
+      responses:
+        '207':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MultiStatusResponse'
+              examples:
+                bothRecordsSaved:
+                  $ref: '#/components/examples/RecordGroupsCreatedOk'
+                oneRecordOutOfTwoFailed:
+                  $ref: '#/components/examples/RecordGroupsCreatedPartialSuccess'
+                singleRecordGroupSaved:
+                  $ref: '#/components/examples/SingleRecordGroupSaved'
+                singleRecordGroupRejected:
+                  $ref: '#/components/examples/SingleRecordGroupRejected'
+          description: >-
+            Multi-status response with the list of statuses for each requested entity.
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the backend rejects the payload.
+      operationId: createFileUnits
+      tags:
+        - Descriptions
+
+  /items:
+    post:
+      description: Creates several Item descriptions
+      security: 
+        - jwt: []
+      requestBody:
+        $ref: '#/components/requestBodies/PostItemRequest'
+      responses:
+        '207':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MultiStatusResponse'
+              examples:
+                bothRecordsSaved:
+                  $ref: '#/components/examples/RecordGroupsCreatedOk'
+                oneRecordOutOfTwoFailed:
+                  $ref: '#/components/examples/RecordGroupsCreatedPartialSuccess'
+                singleRecordGroupSaved:
+                  $ref: '#/components/examples/SingleRecordGroupSaved'
+                singleRecordGroupRejected:
+                  $ref: '#/components/examples/SingleRecordGroupRejected'
+          description: >-
+            Multi-status response with the list of statuses for each requested entity.
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the backend rejects the payload.
+      operationId: createItems
+      tags:
+        - Descriptions
+
   /descriptions:
     get:
       security:
@@ -336,6 +406,26 @@ components:
               $ref: models/Series.yaml
       description: > 
         A list of Series archival descriptions.
+
+    PostFileUnitsRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: models/FileUnit.yaml
+      description: > 
+        A list of File Unit archival descriptions.
+
+    PostItemRequest:
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: models/Item.yaml
+      description: > 
+        A list of Item archival descriptions.
 
   schemas:
         

@@ -8,3 +8,6 @@ allOf:
 properties:
   collectionIdentifier:
     $ref: collectionIdentifier.yaml
+required:
+  - descriptionType
+  - collectionIdentifier

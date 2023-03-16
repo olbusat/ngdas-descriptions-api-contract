@@ -2,3 +2,5 @@ title: geographicReference
 description: The geographic area represented in the archival materials.
 allOf:
   - $ref: authorityReference.yaml
+required:
+  - authorityType

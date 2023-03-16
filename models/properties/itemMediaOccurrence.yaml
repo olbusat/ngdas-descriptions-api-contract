@@ -1,10 +1,8 @@
-
-
 title: itemMediaOccurrence
 description: Additional media occurrence information only available for items.
 type: object
 allOf:
-  - $ref: mediaOccurrence
+  - $ref: mediaOccurrence.yaml
 properties:
   base:
     type: string
@@ -21,4 +19,4 @@ properties:
   otherPreservationCharacteristics:
     type: array
     items:
-      $ref: otherPreservationCharacteristics
+      $ref: otherPreservationCharacteristics.yaml

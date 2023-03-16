@@ -13,3 +13,7 @@ properties:
       oneOf:
         - $ref: creatingIndividual.yaml
         - $ref: creatingOrganization.yaml
+      discriminator:
+        propertyName: authorityType
+required:
+  - descriptionType

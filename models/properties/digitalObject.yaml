@@ -41,7 +41,7 @@ properties:
     example: 16-1557a.gif
 
   objectId:
-    $ref: objectId
+    $ref: objectId.yaml
 
   objectType:
     description: The type or file format of the digital object.
