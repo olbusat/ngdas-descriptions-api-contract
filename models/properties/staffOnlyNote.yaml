@@ -1,0 +1,9 @@
+title: staffOnlyNote
+description: >-
+  Information about the record group, collection, or archival materials that is intended for NARA employees only.
+type: string
+maxLength: 2000
+example: >
+  When citing negative numbers from negatives found in multiple groups in the same negative jacket, 
+  rejacket as necessary, then identify by using a letter after the date. For example, 
+  6/10/70B, then the frame number.

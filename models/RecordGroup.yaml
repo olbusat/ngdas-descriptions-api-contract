@@ -9,6 +9,18 @@ description: >-
   <p>
   This object doesn't have NAID. See `StoredRecordGroup` definition if you look for the same object but with NAID property
   </p>  
+
+  <H3>
+  TODO!!! Add these fields:
+  </H3>
+  datesOfRecordkeepingStartDate
+  dateQualifierRecordKeepingStartDate
+  datesOfRecordKeepingEndDate
+  dateQualifierRecordKeepingEndDate
+  datesOfRecordsStartDate
+  dateQualifierRecordStartDate
+  datesOfRecordsEndDate
+  dateQualifierRecordStartDate
 type: object
 properties:
   title:
@@ -49,10 +61,17 @@ properties:
     $ref: properties/scopeAndContentNote.yaml
   seriesCount:
     $ref: properties/seriesCount.yaml
+  specialProjects:
+    type: array
+    items:
+      $ref: properties/specialProject.yaml
+  staffOnlyNote:
+    $ref: properties/staffOnlyNote.yaml
 
 required:
   - title
   - recordGroupNumber
+  - dataControlGroup
   - inclusiveEndDate
   - inclusiveStartDate
   - descriptionType

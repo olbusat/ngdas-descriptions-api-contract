@@ -1,0 +1,9 @@
+title: recordStatus
+description: Status of the record
+type: string
+enum:
+  - NEW
+  - APPROVED
+  - REJECTED
+  - ADVANCED
+example: NEW

@@ -1,0 +1,10 @@
+title: specialProject
+description: >-
+  <p>A pointer to the "Special Project Authority List"</p>
+properties:
+  naId:
+    $ref: naId.yaml
+  name:
+    $ref: name.yaml
+required:
+  - naId

@@ -1,5 +1,3 @@
-
-
 title: StoredRecordGroup
 description: > 
   Record Group archival description. 
@@ -7,10 +5,12 @@ description: >
 type: object
 allOf:
   - $ref: properties/naId.yaml
+  - $ref: properties/recordStatus.yaml
   - $ref: RecordGroup.yaml
 required:
   - naId
   - title
+  - recordStatus
   - recordGroupNumber
   - inclusiveStartDate
   - inclusiveEndDate
