@@ -9,5 +9,4 @@ properties:
   recordGroupNumber:
     $ref: recordGroupNumber.yaml
 required:
-  - descriptionType
   - recordGroupNumber

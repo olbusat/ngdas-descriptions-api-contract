@@ -16,5 +16,4 @@ properties:
       discriminator:
         propertyName: authorityType
 required:
-  - descriptionType
   - creators

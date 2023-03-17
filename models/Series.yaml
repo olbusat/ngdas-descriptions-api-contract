@@ -164,7 +164,7 @@ properties:
   partyDesignation:
     $ref: properties/partyDesignation.yaml
 
-  pyhsicalOccurrences:
+  physicalOccurrences:
     type: array
     items:
       $ref: properties/seriesPhysicalOccurrence.yaml

@@ -11,3 +11,6 @@ properties:
 
   naId:
     $ref: naId.yaml
+required:
+  - naId
+  - authorityType

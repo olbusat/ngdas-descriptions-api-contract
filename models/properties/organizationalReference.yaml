@@ -11,5 +11,4 @@ properties:
   establishDate:
     $ref: establishDate.yaml
 required:
-  - authorityType
   - establishDate

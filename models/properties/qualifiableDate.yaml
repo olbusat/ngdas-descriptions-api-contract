@@ -2,10 +2,19 @@ title: qualifiableDate
 description: A datetime with the means to qualify uncertainty.
 type: object
 properties:
+  month:
+    type: integer
+    description: Month of year in MM format (1-12)
+    example: 12
   day:
     type: integer
     description: Day of month in DD format (1-31)
     example: 25
+
+  year:
+    type: integer
+    description: Year in YYYY format
+    example: 2020
 
   logicalDate:
     type: string
@@ -16,17 +25,7 @@ properties:
       in this representation.
     example: 2020-12-25
 
-  month:
-    type: integer
-    description: Month of year in MM format (1-12)
-    example: 12
-
   qualifier:
     type: string
     description: The means for indicating an uncertain or approximate date.
     example: ca.
-
-  year:
-    type: integer
-    description: Year in YYYY format
-    example: 2020
