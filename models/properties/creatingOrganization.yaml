@@ -5,12 +5,12 @@ description: >-
 type: object
 allOf:
   - $ref: creator.yaml
-properties:
-  abolishDate:
-    $ref: abolishDate.yaml
+  - properties:
+      abolishDate:
+        $ref: abolishDate.yaml
 
-  establishDate:
-    $ref: establishDate.yaml
+      establishDate:
+        $ref: establishDate.yaml
 required:
   - authorityType
   - establishDate

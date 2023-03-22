@@ -5,12 +5,12 @@ description: >-
 type: object
 allOf:
   - $ref: creator.yaml
-properties:
-  birthDate:
-    $ref: birthDate.yaml
+  - properties:
+      birthDate:
+        $ref: birthDate.yaml
 
-  deathDate:
-    $ref: deathDate.yaml
+      deathDate:
+        $ref: deathDate.yaml
 required:
   - authorityType
   - birthDate

@@ -4,6 +4,6 @@ description: >-
   background of the organizations and individuals who created, contributed to, or are
   the subject of archival materials.
 type: string
-enum:
-  - Organization
-  - Person
+# enum:
+#   - Organization
+#   - Person

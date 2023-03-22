@@ -4,12 +4,13 @@ description: >-
 type: object
 allOf:
   - $ref: donor.yaml
-properties:
-  birthDate:
-    $ref: birthDate.yaml
+  - type: object
+    properties:
+      birthDate:
+        $ref: birthDate.yaml
 
-  deathDate:
-    $ref: deathDate.yaml
+      deathDate:
+        $ref: deathDate.yaml
 required:
   - authorityType
   - birthDate

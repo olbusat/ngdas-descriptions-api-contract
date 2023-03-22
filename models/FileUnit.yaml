@@ -29,8 +29,6 @@ properties:
         - $ref: properties/ancestorRecordGroup.yaml
         - $ref: properties/ancestorCollection.yaml
         - $ref: properties/ancestorSeries.yaml
-      discriminator:
-        propertyName: descriptionType
 
   arrangement:
     $ref: properties/arrangement.yaml

@@ -5,15 +5,14 @@ description: >-
 type: object
 allOf:
   - $ref: ancestorDescription.yaml
-properties: 
-  creators:
-    type: array
-    minItems: 1
-    items:
-      oneOf:
-        - $ref: creatingIndividual.yaml
-        - $ref: creatingOrganization.yaml
-      discriminator:
-        propertyName: authorityType
+  - type: object
+    properties: 
+      creators:
+        type: array
+        minItems: 1
+        items:
+          oneOf:
+            - $ref: creatingIndividual.yaml
+            - $ref: creatingOrganization.yaml
 required:
   - creators

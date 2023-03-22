@@ -485,151 +485,151 @@ components:
 
   schemas:
         
-    SeriesFileUnitAndItemDescriptionCommonProperties: 
-      description: Parent object encapsulating 'Series', 'FileUnit' and 'Item' common properties
-      type: object
-      properties:
-        title:
-          description: > 
-            <p>A title.</p> See additional guidelines on this field for <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#10">Series descriptions</a>, <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#18">FileUnit descriptions</a>, <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#19">Item descriptions</a>
-          type: string
-          example: "Triumph of the Will"
-          minLength: 20
-          maxLength: 700
-        generalRecordsType:
-          description: |
-            <p>The general intellectual form of the archival materials.</p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/grt.html">See also</a></p>
-          type: string
-          example: "Photographs and other Graphic Materials"
-          minLength: 1
-          maxLength: 100
-        accessRestrictionStatus:
-          description: |
-            <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
-            <p>The indication of whether or not there are access restrictions on the archival materials.</p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/access.html">See also</a></p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/accesslist.html">Related Authority</a></p>
-          type: string
-          example: "Restricted - Partly"
-          minLength: 1
-          maxLength: 100
-        specificAccess:
-          type: array
-          minItems: 1
-          uniqueItems: true
-          items:
-            $ref: '#/components/schemas/SpecificAccessRestrictionWithSecurityClassification'
-        useRestrictionStatus:
-          description: |
-            <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
-            <p>Indication of whether or not there are use restrictions on the archival materials.</p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/use.html">See also</a></p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/uselist.html">Related Authority</a></p>
-          type: string
-          example: "Restricted - Possibly"
-          minLength: 1
-          maxLength: 25
-        specificUseRestriction:
-          description: |
-            <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
-            <p>The identification of the type of use restrictions, based on copyright, donor, or statutory provisions, on the archival materials.</p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificuse.html">See also</a></p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/specificuselist.html">Related Authority</a></p>
-          type: string
-          example: "Donor Restrictions"
-          minLength: 1
-          maxLength: 100
-        inclusiveStartDate:
-          type: string
-          pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
-          description: >
-            <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The beginning date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
-        inclusiveEndDate:
-          type: string
-          pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
-          description: >
-            <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The last date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
-        creatingIndividual:
-          description: |
-            <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
-            <p>The name of a person responsible for the creation, accumulation, or maintenance of the series when in working (primary) use.</p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificuse.html">See also</a></p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/specificuselist.html">Related Authority</a></p>
-          type: string
-          example: "Donor Restrictions"
-          minLength: 1
-          maxLength: 100
-      required:
-        - title
-        - generalRecordsType
-        - accessRestrictionStatus
-        - specificAccessRestriction
-        - securityClassification
-        - useRestrictionStatus
-        - specificUseRestriction
-        - inclusiveStartDate
-        - inclusiveEndDate
+    # SeriesFileUnitAndItemDescriptionCommonProperties: 
+    #   description: Parent object encapsulating 'Series', 'FileUnit' and 'Item' common properties
+    #   type: object
+    #   properties:
+    #     title:
+    #       description: > 
+    #         <p>A title.</p> See additional guidelines on this field for <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#10">Series descriptions</a>, <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#18">FileUnit descriptions</a>, <a href="https://www.archives.gov/research/catalog/lcdrg/elements/title.html#19">Item descriptions</a>
+    #       type: string
+    #       example: "Triumph of the Will"
+    #       minLength: 20
+    #       maxLength: 700
+    #     generalRecordsType:
+    #       description: |
+    #         <p>The general intellectual form of the archival materials.</p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/grt.html">See also</a></p>
+    #       type: string
+    #       example: "Photographs and other Graphic Materials"
+    #       minLength: 1
+    #       maxLength: 100
+    #     accessRestrictionStatus:
+    #       description: |
+    #         <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
+    #         <p>The indication of whether or not there are access restrictions on the archival materials.</p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/access.html">See also</a></p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/accesslist.html">Related Authority</a></p>
+    #       type: string
+    #       example: "Restricted - Partly"
+    #       minLength: 1
+    #       maxLength: 100
+    #     specificAccess:
+    #       type: array
+    #       minItems: 1
+    #       uniqueItems: true
+    #       items:
+    #         $ref: '#/components/schemas/SpecificAccessRestrictionWithSecurityClassification'
+    #     useRestrictionStatus:
+    #       description: |
+    #         <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
+    #         <p>Indication of whether or not there are use restrictions on the archival materials.</p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/use.html">See also</a></p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/uselist.html">Related Authority</a></p>
+    #       type: string
+    #       example: "Restricted - Possibly"
+    #       minLength: 1
+    #       maxLength: 25
+    #     specificUseRestriction:
+    #       description: |
+    #         <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
+    #         <p>The identification of the type of use restrictions, based on copyright, donor, or statutory provisions, on the archival materials.</p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificuse.html">See also</a></p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/specificuselist.html">Related Authority</a></p>
+    #       type: string
+    #       example: "Donor Restrictions"
+    #       minLength: 1
+    #       maxLength: 100
+    #     inclusiveStartDate:
+    #       type: string
+    #       pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
+    #       description: >
+    #         <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The beginning date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
+    #     inclusiveEndDate:
+    #       type: string
+    #       pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
+    #       description: >
+    #         <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The last date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
+    #     creatingIndividual:
+    #       description: |
+    #         <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
+    #         <p>The name of a person responsible for the creation, accumulation, or maintenance of the series when in working (primary) use.</p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificuse.html">See also</a></p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/specificuselist.html">Related Authority</a></p>
+    #       type: string
+    #       example: "Donor Restrictions"
+    #       minLength: 1
+    #       maxLength: 100
+    #   required:
+    #     - title
+    #     - generalRecordsType
+    #     - accessRestrictionStatus
+    #     - specificAccessRestriction
+    #     - securityClassification
+    #     - useRestrictionStatus
+    #     - specificUseRestriction
+    #     - inclusiveStartDate
+    #     - inclusiveEndDate
 
-    SeriesAAAAAAAAAAAAA:
-      description: Series archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#series">See mandatory properties list</a>
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/SeriesFileUnitAndItemDescriptionCommonProperties'
-        - type: object
-          properties:
-            function:
-              description: |
-                <p>The description of why the archival materials were created.
+    # SeriesAAAAAAAAAAAAA:
+    #   description: Series archival description. <a href="https://www.archives.gov/research/catalog/lcdrg/mandatoryelements.html#series">See mandatory properties list</a>
+    #   type: object
+    #   allOf:
+    #     - $ref: '#/components/schemas/SeriesFileUnitAndItemDescriptionCommonProperties'
+    #     - type: object
+    #       properties:
+    #         function:
+    #           description: |
+    #             <p>The description of why the archival materials were created.
     
-                This element differs from Scope and Content Note, which describes the significant information contained within the records.
+    #             This element differs from Scope and Content Note, which describes the significant information contained within the records.
                 
-                Function and Use is about the activities that resulted in the creation of the archival materials.
-                Scope and Content Note is what is in the archival materials.</p>
-                <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/function.html">See also</a></p>
-              type: string
-              example: "The Reports of Death were created at field hospitals or by battlefield commanders and were later used by Sextons to complete Internment Records"
-              minLength: 20
-              maxLength: 2000
-            inclusiveStartDate:
-              type: string
-              pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
-              description: >
-                <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The beginning date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
-            inclusiveEndDate:
-              type: string
-              pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
-              description: >
-                <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The last date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
-      required:
-        - function
+    #             Function and Use is about the activities that resulted in the creation of the archival materials.
+    #             Scope and Content Note is what is in the archival materials.</p>
+    #             <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/function.html">See also</a></p>
+    #           type: string
+    #           example: "The Reports of Death were created at field hospitals or by battlefield commanders and were later used by Sextons to complete Internment Records"
+    #           minLength: 20
+    #           maxLength: 2000
+    #         inclusiveStartDate:
+    #           type: string
+    #           pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
+    #           description: >
+    #             <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The beginning date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
+    #         inclusiveEndDate:
+    #           type: string
+    #           pattern: (0[1-9]|1[012])[/](0[1-9]|[12][0-9]|3[01])[/](17|18|19|20)\d\d
+    #           description: >
+    #             <a href="https://www.archives.gov/research/catalog/lcdrg/elements/inclusivestart.html">The last date</a> on which the record group, collection, series, or item was created, maintained, or accumulated by the creator.
+    #   required:
+    #     - function
 
-    SpecificAccessRestrictionWithSecurityClassification:
-      description: | 
-        <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificaccess.html">Specific Access Restriction</a> along with the <a href="https://www.archives.gov/research/catalog/lcdrg/elements/security.html">Security Classification</a></p>
-      type: object
-      properties:
-        specificAccessRestriction:
-          description: |
-            <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
-            <p><h1>If a Restriction Status of "Restricted - Fully" or "Restricted - Partly" is selected, then the Specific Restriction becomes mandatory. If a Specific Access Restriction of "FOIA (b)(1) National Security", "Donated - Security Classified", or "Security Classified - Mandatory Review" is selected, then the Security Classification also becomes mandatory.</h1></p>
-            <p>Specific access restrictions to the archival materials, based on national security considerations, donor restrictions, court orders, and other statutory or regulatory provisions.</p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificaccess.html">See also</a></p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/specificaccesslist.html">Related Authority</a></p>
-          type: string
-          example: "PRMPA - National Security Classified (B)"
-          minLength: 1
-          maxLength: 100
-        securityClassification:
-          description: |
-            <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
-            <p>The highest level of national security protections or classified nuclear information protections on the archival materials.</p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/security.html">See also</a></p>
-            <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/securitylist.html">Related Authority</a></p>
-          type: string
-          example: "Restricted Data/Formerly Restricted Data"
-          minLength: 1
-          maxLength: 40
+    # SpecificAccessRestrictionWithSecurityClassification:
+    #   description: | 
+    #     <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificaccess.html">Specific Access Restriction</a> along with the <a href="https://www.archives.gov/research/catalog/lcdrg/elements/security.html">Security Classification</a></p>
+    #   type: object
+    #   properties:
+    #     specificAccessRestriction:
+    #       description: |
+    #         <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
+    #         <p><h1>If a Restriction Status of "Restricted - Fully" or "Restricted - Partly" is selected, then the Specific Restriction becomes mandatory. If a Specific Access Restriction of "FOIA (b)(1) National Security", "Donated - Security Classified", or "Security Classified - Mandatory Review" is selected, then the Security Classification also becomes mandatory.</h1></p>
+    #         <p>Specific access restrictions to the archival materials, based on national security considerations, donor restrictions, court orders, and other statutory or regulatory provisions.</p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/specificaccess.html">See also</a></p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/specificaccesslist.html">Related Authority</a></p>
+    #       type: string
+    #       example: "PRMPA - National Security Classified (B)"
+    #       minLength: 1
+    #       maxLength: 100
+    #     securityClassification:
+    #       description: |
+    #         <p><h1>TODO!!! This is the link to an Authority. Should this property be a string, or a complex object with the NAID??</h1></p>
+    #         <p>The highest level of national security protections or classified nuclear information protections on the archival materials.</p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/elements/security.html">See also</a></p>
+    #         <p><a href="https://www.archives.gov/research/catalog/lcdrg/authority_lists/securitylist.html">Related Authority</a></p>
+    #       type: string
+    #       example: "Restricted Data/Formerly Restricted Data"
+    #       minLength: 1
+    #       maxLength: 40
           
     OperationStatusCode:
       type: object

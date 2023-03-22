@@ -23,8 +23,6 @@ properties:
       oneOf:
         - $ref: properties/ancestorRecordGroup.yaml
         - $ref: properties/ancestorCollection.yaml
-      discriminator:
-        propertyName: descriptionType
 
   arrangement:
     $ref: properties/arrangement.yaml
@@ -56,8 +54,6 @@ properties:
       oneOf:
         - $ref: properties/creatingIndividual.yaml
         - $ref: properties/creatingOrganization.yaml
-      discriminator:
-        propertyName: authorityType
 
   custodialHistoryNote:
     $ref: properties/custodialHistoryNote.yaml
@@ -99,8 +95,6 @@ properties:
       oneOf:
         - $ref: properties/ancestorRecordGroup.yaml
         - $ref: properties/ancestorCollection.yaml
-      discriminator:
-        propertyName: descriptionType
 
   functionAndUse:
     $ref: properties/functionAndUse.yaml

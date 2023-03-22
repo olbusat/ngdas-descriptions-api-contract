@@ -6,12 +6,13 @@ description: >-
 type: object
 allOf:
   - $ref: donor.yaml
-properties:
-  abolishDate:
-    $ref: abolishDate.yaml
+  - type: object
+    properties:
+      abolishDate:
+        $ref: abolishDate.yaml
 
-  establishDate:
-    $ref: establishDate.yaml
+      establishDate:
+        $ref: establishDate.yaml
 required:
   - authorityType
   - heading
