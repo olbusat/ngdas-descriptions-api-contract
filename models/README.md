@@ -1,7 +1,7 @@
-# NGC CATALOG DATA MODEL
+# NG DAS DESCRIPTIONS DATA MODEL
 
-These files represent how data is stored internally and shared with users of the catalog. They are in YAML format and conform to [JSON Schema](http://json-schema.org/draft-07/schema#).  
-The files here are used to generate Swagger documentaion for the Catalog API. If an update is made to these files follow the steps below to apply the changes to swagger.
+These files represent how data is stored internally and shared with DAS users. They are in YAML format and conform to [JSON Schema](http://json-schema.org/draft-07/schema#).  
+The files here are used to generate various code and documentation artifacts for Next Gen DAS. If an update is made to these files follow the steps below to apply the changes to swagger.
 
 - Run the python script located in the swagger folder
 

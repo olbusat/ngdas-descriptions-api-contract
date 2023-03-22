@@ -73,13 +73,20 @@ paths:
                   $ref: '#/components/examples/SingleRecordGroupRejected'
           description: >-
             Multi-status response with the list of statuses for each requested entity.
-        '400':
+        '422':
           content:
             application/json:
               schema:
                 $ref: '#/components/responses/Problem'
           description: >
-            Error response for cases when the backend rejects the attempt to add a new visit intention.
+            Error response for cases when the backend rejects the payload.
+        '403':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the operation isn't authorized.
       operationId: createRecordGroups
       tags:
         - Descriptions
@@ -110,6 +117,13 @@ paths:
                   $ref: examples/record-groups/mandatoryPropertiesOnly.yaml
           description: >-
             A single Record Group
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response when the requested record is not found.
   
   /collections:
     get:
@@ -158,6 +172,20 @@ paths:
                   $ref: '#/components/examples/RecordGroupsCreatedPartialSuccess'
           description: >-
             Multi-status response with the list of statuses for each requested entity.
+        '422':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the backend rejects the payload.
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the operation isn't authorized.
       operationId: createCollections
       tags:
         - Descriptions
@@ -187,6 +215,13 @@ paths:
                   $ref: '#/components/examples/SingleCollection'
           description: >-
             A single Collection
+        '404':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response when the requested record is not found.
 
   /series:
     post:
@@ -219,6 +254,13 @@ paths:
                 $ref: '#/components/responses/Problem'
           description: >
             Error response for cases when the backend rejects the payload.
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the operation isn't authorized.
       operationId: createSeries
       tags:
         - Descriptions
@@ -254,6 +296,13 @@ paths:
                 $ref: '#/components/responses/Problem'
           description: >
             Error response for cases when the backend rejects the payload.
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the operation isn't authorized.
       operationId: createFileUnits
       tags:
         - Descriptions
@@ -289,6 +338,13 @@ paths:
                 $ref: '#/components/responses/Problem'
           description: >
             Error response for cases when the backend rejects the payload.
+        '401':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/responses/Problem'
+          description: >
+            Error response for cases when the operation isn't authorized.
       operationId: createItems
       tags:
         - Descriptions
